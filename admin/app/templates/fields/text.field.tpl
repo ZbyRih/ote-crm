@@ -1,0 +1,1 @@
+<input type="text" name="{$c.key}" value="{$d.value}" class="{$class}" id="{$c.key}"{if isset($c.mask) && $c.mask} mask="{$c.mask}"{/if}{if $c.num == 3}dt="currency"{/if}{if $c.num == 2}dt="float"{/if}{if $c.num == 4}dt="numeric"{/if}{$attributes} />

@@ -1,0 +1,3 @@
+extensions:
+  events: Contributte\EventDispatcher\DI\EventDispatcherExtension
+  events.application: Contributte\Events\Extra\Application\DI\EventApplicationBridgeExtension

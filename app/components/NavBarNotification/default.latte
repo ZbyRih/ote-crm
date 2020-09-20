@@ -1,0 +1,18 @@
+{block notifications}
+<li class="dropdown hidden-xs">
+	<a href="javascript:;" class="btn btn-icon-toggle btn-default" data-toggle="dropdown" aria-expanded="true">
+		<i class="fa fa-bell"></i><sup n:if="$counts" class="badge style-danger">{$counts}</sup>
+	</a>
+	<ul class="dropdown-menu animation-expand">
+		<li><a href="{plink :Info:Default:}">Zobrazit vše <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
+		<li><a href="{link markAsReaded!}" n:if="$counts" class="ajax link">Přečteno <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
+		<li class="dropdown-header">Nepřečtené</li>
+		<li n:foreach="$notifs as $n">
+			<a class="alert alert-callout {if $n->viewed}alert-success{elseif $n->type == 'ote'}alert-warning{else}alert-info{/if}" href="javascript:;">
+				<small>{$n->type}:</small><strong>{$n->message|replace:'|':'<br/>'}</strong><br>
+				<small>{$n->created->format('j.n. Y H:i:s')}</small>
+			</a>
+		</li>
+	</ul>
+</li>
+{/block}

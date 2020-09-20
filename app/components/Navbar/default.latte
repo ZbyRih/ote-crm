@@ -1,0 +1,28 @@
+{block navbar}
+<ul class="header-nav header-nav-options">
+	{if $allowRelog}
+	<li class="dropdown-extended">
+		<div class="btn-group">
+			<button type="button" class="btn ink-reaction btn-default-light">{$selectedRole}</button>
+			<button type="button" class="btn ink-reaction btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-caret-down"></i></button>
+			<ul class="dropdown-menu" role="menu">
+				<li n:foreach="$rolesOptions as $k => $r" n:class="$r->selected ? active"><a href="{link swapRole!, $backlink, $k}">{$r->name}</a></li>
+			</ul>
+		</div>		
+	</li>
+	{/if}
+	
+	{control notification}
+</ul>
+<ul class="header-nav">
+	<li class="module-help">
+		<a href="{plink :Helper:Default:help $resource}" class="btn btn-icon-toggle" title="Nápověda">
+			<i class="md md-live-help"></i>
+		</a>
+	</li>
+	<li class="header-nav-user"><span class="user">{$identity->name} <small>{_'app.roles.' . $identity->role}</small></span></li>
+	<li>
+		<a href="{plink :Sign:Actions:out}" class="btn btn-icon-toggle" title="Odhlásit"><i class="fa fa-power-off"></i></a>
+	</li>
+</ul>
+{/block}

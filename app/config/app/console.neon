@@ -1,0 +1,26 @@
+console:
+  url: %app.basePath%
+
+services:
+  -
+    class: App\Console\App\GP6ZipCommand
+    tags: [kdyby.console.command]
+  -
+    class: App\Console\App\OteDownloadCommand
+    tags: [kdyby.console.command]
+
+#  -
+#    class: App\Console\Console\ConsoleTestCommand
+#    tags: [kdyby.console.command]
+#  - 
+#    class: App\Console\Console\ConsoleTestEmailCommand
+#    tags: [kdyby.console.command]
+#  - 
+#    class: App\Console\Console\ConsoleHelpCommand
+#    tags: [kdyby.console.command]
+#  - 
+#    class: App\Console\Console\ConsoleCleanCommand
+#    tags: [kdyby.console.command]
+#  - 
+#    class: App\Console\Console\ConsoleBuildCommand
+#    tags: [kdyby.console.command]

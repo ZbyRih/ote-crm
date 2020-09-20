@@ -1,0 +1,19 @@
+{block}
+<div class="modal fade in" id="{$modalId}" tabindex="-1" role="dialog"{if $modalHidden} aria-hidden="true"{/if}>
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+				<h4 class="modal-title">{$modalTitle}</h4>
+			</div>
+			<div class="modal-body">
+				{include #modal-body}
+			</div>
+			<div class="modal-footer">
+				{ifset #modal-foot}{include #modal-body}{/ifset}
+ 				<button type="button" class="btn dark btn-outline" data-dismiss="modal">Zavřít</button>
+			</div>
+		</div>
+	</div>
+</div>
+{/block}

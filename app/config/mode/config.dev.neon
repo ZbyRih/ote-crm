@@ -1,0 +1,17 @@
+mail:
+    smtp: false # zapne SmtpMailer místo SendmailMailer
+    
+services:
+  nette.mailer:
+    class: Nette\Mail\IMailer
+    factory: Nextras\MailPanel\FileMailer(%tempDir%/mail-panel-mails)
+
+extensions:
+  profiler: Netpromotion\Profiler\Extension\ProfilerNetteExtension
+  
+parameters:
+  mail:
+    from:
+      email: test@localhost
+      name: OTE CRM
+  

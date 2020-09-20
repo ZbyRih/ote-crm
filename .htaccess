@@ -1,0 +1,4 @@
+RewriteEngine on
+
+RewriteCond %{ENV:HTTPS} !^.*on
+RewriteRule ^(.*)$ url$1 [R,L]

@@ -1,0 +1,24 @@
+{foreach $items as $c}
+{if $c instanceof \Nette\Forms\Container}
+	<div class="form-group">
+	<div class="col-md-offset-1">
+		{foreach $c->getComponents() as $p}
+		<div class="row row-striped col-md-12">
+			<div class="col-md-5 control-label text-left">
+				<label>{_$p->caption|firstLower}</label>
+			</div>
+			<div class="col-md-2">{$p->getControl()}</div>
+			<div n:if="$super" class="col-md-5 control-label text-left">
+				<label><small>{$p->getName()}</small></label>
+			</div>
+		</div>
+		{/foreach}
+	</div>
+	</div>
+{else}
+	<div class="form-group">
+		<div class="col-md-3 control-label text-left"><label>{_$c->caption}</label></div>
+		<div class="col-md-9">{$c->getControl()}</div>
+	</div>
+{/if}
+{/foreach}

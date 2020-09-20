@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	{include APP_DIR . '/templates/layout/head.latte'}
+	{wpm_script $basePath, '/dist/css/theme_def_css.css'}
+</head>
+<body class="{if !\Tracy\Debugger::$productionMode} app-debug{/if}">
+	<section class="section-account">
+		<div class="img-backdrop" id="ote"></div>
+		<div class="spacer"></div>
+		<div class="card contain-sm style-transparent">
+			<div class="card-body">
+				<div class="row">
+					<div class="col-sm-6">
+						<br>
+						<span class="text-xl text-bold text-primary">{wpm_image $basePath, '/dist/css/background.png'}{_'app.name'}</span>
+						<br><br>
+						{include content}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	{wpm_script $basePath, '/dist/js/app_js.js'}
+</body>
+</html>

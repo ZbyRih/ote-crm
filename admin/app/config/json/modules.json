@@ -1,0 +1,571 @@
+{
+	"items":[
+		{
+			"id":23,
+			"name":"Select",
+			"file":"select",
+			"model":{
+				"class":null,
+				"pk":null,
+				"name":null,
+				"entity":false
+			},
+			"handler":null,
+			"listtype":"l",
+			"tolayout":false,
+			"tomenu":false,
+			"stats":false,
+			"active": true,
+			"visible":false,
+			"icon":""
+		}
+		, {
+			"id":80,
+			"name":"Cron",
+			"file":"cron",
+			"model":{
+				"class":null,
+				"pk":null,
+				"name":null,
+				"entity":false
+			},
+			"handler":null,
+			"listtype":"l",
+			"tolayout":false,
+			"tomenu":false,
+			"stats":false,
+			"active": true,
+			"visible":false,
+			"icon":""
+		}
+		, {
+			"id":90,
+			"name":"Reset",
+			"file":"reset",
+			"model":{
+				"class":null,
+				"pk":null,
+				"name":null,
+				"entity":false
+			},
+			"handler":null,
+			"listtype":"l",
+			"tolayout":false,
+			"tomenu":false,
+			"stats":false,
+			"active": true,
+			"visible":false,
+			"icon":""
+		}
+		, {
+			"id":22,
+			"name":"Odběratelé",
+			"file":"contacts",
+			"model":{
+				"class":"Contacts",
+				"pk":"klientid",
+				"name":"ContactDetails.firstname|ContactDetails.lastname|ContactDetails.firm_name",
+				"entity":false
+			},
+			"handler":null,
+			"listtype":"l",
+			"tolayout":false,
+			"tomenu":false,
+			"stats":false,
+			"active": true,
+			"visible":true,
+			"icon":"md md-account-child"
+		}
+		, {
+			"id":54,
+			"name":"Fakturační skupiny",
+			"file":"fakskups",
+			"model":{
+				"class":"FakSkup",
+				"pk":"fakskup_id",
+				"name":"FakSkup.cis",
+				"entity":false
+			},
+			"handler":null,
+			"listtype":"l",
+			"tolayout":false,
+			"tomenu":false,
+			"stats":false,
+			"active": true,
+			"visible":true,
+			"icon":"fa fa-folder-open"
+		}
+		, {
+			"id":50,
+			"name":"Odběrná místa",
+			"file":"odbermist",
+			"model":{
+				"class":"OdberMist",
+				"pk":"odber_mist_id",
+				"name":"OdbetMist.com",
+				"entity":false
+			},
+			"handler":null,
+			"listtype":"l",
+			"tolayout":false,
+			"tomenu":false,
+			"stats":false,
+			"active": true,
+			"visible":true,
+			"icon":"md md-av-timer"
+		}
+		, {
+			"id":51,
+			"name":"Zálohy",
+			"file":"zalohy",
+			"model":{
+				"class":"Zalohy",
+				"pk":"zaloha_id",
+				"name":"Zalohy.od|Zalohy.vs|Zalohy.vyse",
+				"entity":false
+			},
+			"handler":null,
+			"listtype":"l",
+			"tolayout":false,
+			"tomenu":false,
+			"stats":false,
+			"active":true,
+			"visible":true,
+			"icon":"fa fa-leanpub" }
+		, {
+			"id":56,
+			"name":"Faktury",
+			"file":"faktury",
+			"model":{
+				"class":"Faktury",
+				"pk":"faktura_id",
+				"name":"suma",
+				"entity":false
+			},
+			"handler":null,
+			"listtype":"l",
+			"tolayout":false,
+			"tomenu":false,
+			"stats":false,
+			"active":true,
+			"visible":true,
+			"icon":"fa fa-dollar" }
+		, {
+			"id":52,
+			"name":"OTE GP6",
+			"file":"otegp6",
+			"model":{
+				"class":"Faktury",
+				"pk":"faktura_id",
+				"name":"sum",
+				"entity":false
+			},
+			"handler":null,
+			"listtype":"l",
+			"tolayout":false,
+			"tomenu":false,
+			"stats":false,
+			"active":true,
+			"visible":true,
+			"icon":"md md-crop" }
+		, {
+			"id":65,
+			"name":"Pohyby",
+			"file":"pohyby",
+			"model":{
+				"class":"Pohyb",
+				"pk":"id",
+				"name":"Pohyb.when|Pohyb.castka",
+				"entity":false
+			},
+			"handler":null,
+			"listtype":"l",
+			"tolayout":false,
+			"tomenu":false,
+			"stats":false,
+			"active":true,
+			"visible":true,
+			"icon":"md md-account-balance" }
+		, {
+			"id":53,
+			"name":"Platby",
+			"file":"platby",
+			"model":{
+				"class":"Platby",
+				"pk":"platba_id",
+				"name":"Platba.when|Platba.vs|Platba.platba",
+				"entity":false
+			},
+			"handler":null,
+			"listtype":"l",
+			"tolayout":false,
+			"tomenu":false,
+			"stats":false,
+			"active":true,
+			"visible":true,
+			"icon":"fa fa-money" }
+		, {
+			"id":70,
+			"name":"OTE zprávy",
+			"file":"otezpravy",
+			"model":{
+				"class":null,
+				"pk":null,
+				"name":null,
+				"entity":false
+			},
+			"handler":null,
+			"listtype":"l",
+			"tolayout":false,
+			"tomenu":false,
+			"stats":false,
+			"active":true,
+			"visible":true,
+			"icon":"md md-message" }
+		, {
+			"id":71,
+			"name":"GP6 Select",
+			"file":"gp6select",
+			"model":{
+				"class":null,
+				"pk":null,
+				"name":null,
+				"entity":false
+			},
+			"handler":null,
+			"listtype":"l",
+			"tolayout":false,
+			"tomenu":false,
+			"stats":false,
+			"active":true,
+			"visible":false,
+			"icon":"md md-message" }
+		, {
+			"id":55,
+			"name":"Aktivity",
+			"file":"activity",
+			"model":{
+				"class":"ActivityLogy",
+				"pk":"id",
+				"name":"sum",
+				"entity":false
+			},
+			"handler":null,
+			"listtype":"l",
+			"tolayout":false,
+			"tomenu":false,
+			"stats":false,
+			"active":true,
+			"visible":true,
+			"icon":"md md-traffic"}
+		, {
+			"id":75,
+			"name":"Info",
+			"file":"info",
+			"model":{
+				"class":"Info",
+				"pk":"id",
+				"name":"created",
+				"entity":false
+			},
+			"handler":null,
+			"listtype":"l",
+			"tolayout":false,
+			"tomenu":false,
+			"stats":false,
+			"active":true,
+			"visible":true,
+			"icon":"md md-settings-remote"
+		}
+		, {
+			"id":60,
+			"name":"V.S. Select",
+			"file":"vs.select",
+			"model": null,
+			"handler":null,
+			"listtype":"l",
+			"tolayout":false,
+			"tomenu":false,
+			"stats":false,
+			"active":true,
+			"visible":false,
+			"icon":"md md-traffic"}
+		, {
+			"name":"E-Shop (CMR)",
+			"visible":false,
+			"icon":"md md-shop",
+			"items":[
+				{
+					"id":28,
+					"name":"Faktury",
+					"file":"invoices",
+					"model":{
+						"class":"Invoices",
+						"pk":"invoiceid",
+						"name":"invoicename",
+						"entity":false
+					},
+					"handler":null,
+					"listtype":"l",
+					"tolayout":false,
+					"tomenu":false,
+					"stats":false,
+					"active": false,
+					"visible":true,
+					"icon":"" }
+				, {
+					"id":11,
+					"name":"Doprava a DPH",
+					"file":"shipment",
+					"model":{
+						"class":"Shipment",
+						"pk":null,
+						"name":null,
+						"entity":false
+					},
+					"handler":null,
+					"listtype":"l",
+					"tolayout":false,
+					"tomenu":false,
+					"stats":false,
+					"active": false,
+					"visible":true,
+					"icon":"fa fa-cc-visa" }
+			]
+		}
+		,
+		{
+			"name":"Nastavení",
+			"visible":true,
+			"icon": "md md-settings",
+			"items":[
+				{
+					"id":32,
+					"name":"Šablony",
+					"file":"templates",
+					"model":{
+						"class":"Templates",
+						"pk":"template_id",
+						"name":"Templates.key",
+						"entity":true
+					},
+					"handler":"",
+					"listtype":"",
+					"tolayout":false,
+					"tomenu":false,
+					"stats":false,
+					"active": true,
+					"visible":true,
+					"icon":"md md-event-note"}
+				, {
+					"id":13,
+					"name":"Parametry",
+					"file":"settings",
+					"model":{
+						"class":null,
+						"pk":null,
+						"name":null,
+						"entity":false
+					},
+					"handler":null,
+					"listtype":"l",
+					"tolayout":false,
+					"tomenu":false,
+					"stats":false,
+					"active": true,
+					"visible":true,
+					"icon":"md md-brightness-high"}
+				, {
+					"id":19,
+					"name":"OTE a Komunikace",
+					"file":"oteacomsettings",
+					"model":{
+						"class":null,
+						"pk":null,
+						"name":null,
+						"entity":false
+					},
+					"handler":null,
+					"listtype":"l",
+					"tolayout":false,
+					"tomenu":false,
+					"stats":false,
+					"active": true,
+					"visible":true,
+					"icon":"md md-settings-remote"}
+				, {
+					"id":18,
+					"name":"Uživatelé",
+					"file":"users",
+					"model":{
+						"class":"User",
+						"pk":"userid",
+						"name":"loginname",
+						"entity":false
+					},
+					"handler":null,
+					"listtype":"l",
+					"tolayout":false,
+					"tomenu":false,
+					"stats":false,
+					"active": true,
+					"visible":true,
+					"icon":"glyphicon glyphicon-user" }
+				, {
+					"id":40,
+					"name":"Štítky",
+					"file":"tags",
+					"model":{
+						"class":"EntityTag",
+						"pk":"entitytagid",
+						"name":"entitytagname",
+						"entity":false
+					},
+					"handler":"",
+					"listtype":"",
+					"tolayout":false,
+					"tomenu":false,
+					"stats":false,
+					"active": true,
+					"visible":true,
+					"icon":"fa fa-tags"}
+				, {
+					"id":41,
+					"name":"Nápověda",
+					"file":"helper",
+					"model":{"class":"Helper","pk":"helpid","name":"Modul.modulname","entity":false},
+					"handler":"",
+					"listtype":"",
+					"tolayout":false,
+					"tomenu":false,
+					"stats":false,
+					"active":true,
+					"visible":true,
+					"icon":"fa fa-question"}
+				, {
+					"id":61,
+					"name":"Logy",
+					"file":"logs",
+					"model":null,
+					"handler":"",
+					"listtype":"",
+					"tolayout":false,
+					"tomenu":false,
+					"stats":false,
+					"active":true,
+					"visible":true,
+					"icon":"md md-sim-card-alert"}					
+				, {
+					"id":7,
+					"name":"Mutace",
+					"file":"mutation",
+					"model":{
+						"class":"Mutation",
+						"pk":"mutationid",
+						"name":null,
+						"entity":false
+					},
+					"handler":null,
+					"listtype":"l",
+					"tolayout":false,
+					"tomenu":false,
+					"stats":false,
+					"active": false,
+					"visible":true,
+					"icon":"fa fa-language"}
+				, {
+					"id":6,
+					"name":"Functions",
+					"file":"functions",
+					"model":{
+						"class":"Function",
+						"pk":"functionid",
+						"name":"name",
+						"entity":true
+					},
+					"handler":"f",
+					"listtype":"l",
+					"tolayout":true,
+					"tomenu":true,
+					"stats":false,
+					"active": false,
+					"visible":true,
+					"icon":"" }
+				, {
+					"id":14,
+					"name":"Import/Export",
+					"file":"impexp",
+					"model":{
+						"class":null,
+						"pk":null,
+						"name":null,
+						"entity":false
+					},
+					"handler":null,
+					"listtype":"l",
+					"tolayout":false,
+					"tomenu":false,
+					"stats":false,
+					"active": true,
+					"visible":true,
+					"icon":"md md-swap-vert" }
+				, {
+					"id":29,
+					"name":"Skupiny",
+					"file":"groups",
+					"model":{
+						"class":"Group",
+						"pk":"groupid",
+						"name":"groupname",
+						"entity":false
+					},
+					"handler":null,
+					"listtype":"l",
+					"tolayout":false,
+					"tomenu":false,
+					"stats":false,
+					"active": false,
+					"visible":true,
+					"icon":""
+				}
+				, {
+					"id":25,
+					"name":"Čištění",
+					"file":"cleanup",
+					"model":{
+						"class":null,
+						"pk":null,
+						"name":null,
+						"entity":false
+					},
+					"handler":null,
+					"listtype":"l",
+					"tolayout":false,
+					"tomenu":false,
+					"stats":false,
+					"active": true,
+					"visible":true,
+					"icon":"fa fa-paint-brush" }
+				, {
+					"id":21,
+					"name":"Zaznamenaní boti",
+					"file":"clickspy",
+					"model":{
+						"class":"Clicks",
+						"pk":"id",
+						"name":"bot_name",
+						"entity":false
+					},
+					"handler":"",
+					"listtype":"l",
+					"tolayout":false,
+					"tomenu":false,
+					"stats":false,
+					"active": false,
+					"visible":true,
+					"icon":"md md-android" }
+			]
+		}
+		
+	]
+}

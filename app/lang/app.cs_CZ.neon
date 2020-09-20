@@ -1,0 +1,53 @@
+autor: ""  
+copyright: "Copyright (c) "
+name: "OTE CRM"
+
+mail:
+	forgot-subject: "Zapomenuté heslo"
+  
+menu:
+	Homepage: Homepage
+	Denied: Odepření
+	Klients: Odběratelé
+	FakSkups: "Fakturační skupiny"
+	OdberMist: "Odběrná místa"
+	Zalohy: Zálohy
+	Faktury: Faktury
+	Pohyby: Pohyby
+	Platby: Platby
+	OteGP6: "OTE GP6"
+	OteZpravy: "OTE Zprávy"
+	Activity: Aktivity
+	Info: Info
+	Nastaveni: Nastavení
+	Templates: Šablony
+	User: Uživatelé
+	Role: Role
+	Settings: Nastavení
+	OteAComSettings: "OTE a Komunikace"
+	Tags: Štítky
+	Helper: Nápověda
+	Ciselniky: Číselníky
+	Logs: Logy
+	Service: Servis
+	Legacy: Starý systém
+	AccountBalance: Zúčtování
+
+roles:
+	klient: Klient
+	super: Super
+	admin: Supervizor
+	sell: Obchodní Manažer
+	ucto: Účetní
+	guest: Návštěvník
+	sys: Systém
+  
+priviledge:
+	User:
+		relog: může se přihlásit jako jiný uživatel
+		activity: v přehledu zobrazí poslední přihlášení
+	Role:
+		change: Může si změnit roli
+	Klients:
+		change_owner: změna vlastníka
+		view_all: vidí všechny klienty

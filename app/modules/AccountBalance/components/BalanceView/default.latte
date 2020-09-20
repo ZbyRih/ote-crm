@@ -1,0 +1,30 @@
+{block}
+	<div class="card-head">
+		<header>{$klient}</header>
+		<header>{$year}</header>
+	</div>
+
+	<table class="table table-striped table-condensed">
+		<tr>
+			<th>Datum</th>
+			<th>Druh</th>
+			<th>Částka</th>
+			<th>Typ platby</th>
+			<th>VS</th>
+		</tr>
+		<tr n:foreach="$items as $i">
+			<td>{$i['date']}</td>
+			<td>{$i['druh']}</td>
+			<td class="text-right">{$i['sum']}</td>
+			<td>{$i['type']}</td>
+			<td>{$i['vs']}</td>
+		</tr>
+		<tr>
+			<th>Suma</th>
+			<th></th>
+			<th class="text-right">{$sum}</th>
+			<th></th>
+			<th></th>
+		</tr>
+	</table>
+{/block}

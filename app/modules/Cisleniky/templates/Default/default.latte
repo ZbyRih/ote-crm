@@ -1,0 +1,22 @@
+{block #buttons}
+	{if $enableSwitch}
+		{control switch}
+	{/if}
+{/block}
+
+{block content}
+	{snippet skupina}
+	<div class="">
+		{portlet}
+		<div class="tab-content" id="nested-sort-structure-view">
+			<div class="tabbable-line">
+				{control items}
+				<div class="tab-content">
+					{control ciselnikyGrid}
+				</div>
+			</div>
+		</div>
+		{/portlet}
+	</div>
+	{/snippet}
+{/block}

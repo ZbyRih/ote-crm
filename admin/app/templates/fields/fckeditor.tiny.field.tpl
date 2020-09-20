@@ -1,0 +1,1 @@
+{include 'fields/fckeditor.field.tpl' tiny='true'}

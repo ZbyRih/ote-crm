@@ -1,0 +1,9 @@
+{block years}
+<div class="col-lg-12 card-head card-head-nav">
+	<a n:if="$prev" n:href="select! $prev" title="Předchozí rok" class="btn btn-flat btn-primary ink-reaction col-lg-4"><i class="md md-arrow-back"></i><span>{$prev}</span></a>
+	<span n:if="!$prev" class="col-lg-4"></span>	
+	<span class="btn btn-flat btn-primary disabled col-lg-4" style="opacity:1; background-color: inherit;"><span class="text-primary-dark">{$current}</span></span>
+	<a n:if="$next" n:href="select! $next" title="Další rok" class="btn btn-flat btn-primary ink-reaction col-lg-4"><span>{$next}</span><i class="md md-arrow-forward"></i></a>
+	<span n:if="!$next" class="col-lg-4"></span>
+</div>
+{/block}

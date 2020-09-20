@@ -1,0 +1,16 @@
+{block #buttons}
+	<a n:href="Default:" class="btn btn-primary btn-raised" title="Seznam faktur"><i class="md md-backspace"></i>&nbsp;Zpět na seznam</a>
+{/block}
+		
+{block content}
+	<div class="">
+		{portlet}
+		
+		{control view}
+		
+		<a n:if="$demoPdf" n:href="demoPdf!" class="btn btn-flat ink-reaction btn-primary" title="Seznam faktur"><i class="fa fa-file-pdf-o"></i>&nbsp;PDF na nečisto</a>
+		<a n:href="fakturovat!" class="btn btn-flat ink-reaction btn-primary" title="Seznam faktur"><i class="md md-add-box"></i>&nbsp;Vyfakturovat</a>
+		
+		{/portlet}
+	</div>
+{/block}

@@ -1,0 +1,77 @@
+services:
+  - App\Extensions\App\User\IdentityFactory
+  
+  - implement: App\Components\IComponentMenuFactory
+  - implement: App\Components\IComponentNavBarFactory
+  - implement: App\Components\IComponentNavBarNotificationFactory
+  - implement: App\Extensions\ITiskComponent
+
+  - implement: App\Components\Homepage\ICertificateInfo
+  - implement: App\Components\Homepage\IInfoReport
+
+  - implement: App\Modules\AccountBalance\Factories\IBalanceGrid
+  - implement: App\Modules\AccountBalance\Factories\IBalanceGridDataSource
+  - implement: App\Modules\AccountBalance\Factories\IBalanceView
+  - implement: App\Modules\AccountBalance\Factories\IBalanceCompact
+
+  - implement: App\Modules\Activity\Factories\IActivityGrid
+  - implement: App\Modules\Activity\Factories\IActivityGridDataSource
+  
+  - implement: App\Modules\Ciselniky\Factories\ICiselnikGrid 
+  - implement: App\Modules\Ciselniky\Factories\ICiselnikGridDataSource 
+  - implement: App\Modules\Ciselniky\Factories\ICiselnikySkupinyGrid
+  - implement: App\Modules\Ciselniky\Factories\ICiselnikySkupinyGridDataSource
+  - implement: App\Modules\Ciselniky\Factories\ICiselnikyAddItem
+  - implement: App\Modules\Ciselniky\Factories\ICiselnikySkupinyAddItem
+  
+  - implement: App\Modules\Faktury\IFakturyGrid
+  - implement: App\Modules\Faktury\IFakturyGridDataSource 
+  - implement: App\Modules\Faktury\IFakturyOteGrid
+  - implement: App\Modules\Faktury\IFakturyOteGridDataSource
+  - implement: App\Modules\Faktury\IFakturyPlatbyGrid
+  - implement: App\Modules\Faktury\IFakturyPlatbyGridDataSource
+  - implement: App\Modules\Faktury\IFakturyParPlatbyGrid
+  
+  - implement: App\Modules\Faktury\IFakturyEditUserForm
+  - implement: App\Modules\Faktury\IFakturyEditGeneratedForm
+
+  - implement: App\Modules\Helper\Factories\IHelperGrid
+  - implement: App\Modules\Helper\Factories\IHelperGridDataSource
+  - implement: App\Modules\Helper\Factories\IHelpEditForm
+
+  - implement: App\Modules\Info\Factories\IInfoGrid
+  - implement: App\Modules\Info\Factories\IInfoGridDataSource
+  
+  - implement: App\Modules\MailBoxes\Factories\IBoxContentComponent
+    
+  - implement: App\Modules\OteGP6\Factories\IOteGP6Grid
+  - implement: App\Modules\OteGP6\Factories\IOteGP6GridDataSource
+  
+  - implement: App\Modules\OteZpravy\Factories\IOteMessageGrid
+  - implement: App\Modules\OteZpravy\Factories\IOteMessageGridDataSource
+  - implement: App\Modules\OteZpravy\Factories\IOteMessageUploadForm
+
+  - implement: App\Modules\Platby\Factories\IPlatbaEdit
+  - implement: App\Modules\Platby\Factories\IPlatbyGrid
+  - implement: App\Modules\Platby\Factories\IPlatbyGridDataSource
+  - implement: App\Modules\Platby\Factories\IVypisUploadForm
+  
+  - implement: App\Modules\Role\Factories\IEditRole
+  - implement: App\Modules\Role\Factories\IRoleGrid
+  - implement: App\Modules\Role\Factories\IRoleGridDataSource
+  
+  - implement: App\Modules\Settings\IComponentEditForm
+  
+  - implement: App\Modules\Tags\Factories\ITagsGrid
+  - implement: App\Modules\Tags\Factories\ITagsGridDataSource
+  
+  - implement: App\Modules\User\Factories\IUserGrid
+  - implement: App\Modules\User\Factories\IUserGridDataSource
+  - implement: App\Modules\User\Factories\IEditUser
+  - implement: App\Modules\User\Factories\IEditPrava
+  
+  - implement: App\Modules\Zalohy\IZalohyGrid
+  - implement: App\Modules\Zalohy\IZalohyGridDataSource
+
+  - implement: App\Components\ITiskDanDoklad
+  - implement: App\Components\ITiskRozpisZaloh

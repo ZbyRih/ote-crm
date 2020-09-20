@@ -1,0 +1,63 @@
+php:
+  date.timezone: Europe/Prague
+# zlib.output_compression: yes
+
+extensions:
+  console: Kdyby\Console\DI\ConsoleExtension
+  translation: Kdyby\Translation\DI\TranslationExtension
+  search: App\Extensions\DI\SearchExtension(%tempDir%/search.extension)
+
+translation:
+  default: cs
+  fallback: [cs_CZ, cs]
+
+application:
+  catchExceptions: yes
+  errorPresenter: Error
+  mapping:
+    *: ['App', 'Modules\*', 'Presenters\*Presenter']
+
+session:
+  expiration: '+ 14 days'
+
+database:
+  dsn: 'mysql:host=%app.db-host%;dbname=%app.db-name%'
+  user: '%app.db-user%'
+  password: '%app.db-pass%'
+  reflection: App\Models\Tables\AppConventions
+  options:
+    sqlmode: 'STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'
+
+tracy:
+  bar:
+    - Nextras\MailPanel\MailPanel(%tempDir%/mail-panel-latte)
+    - Pd\Diagnostics\DatabaseInfoPanel(['db-name' = %app.db-name%], 'db-name')
+
+latte:
+    macros:
+        - App\Extensions\App\LatteMacros
+
+includes:
+  - app/acl/acl.neon
+  - app/acl/privilege.neon
+  - app/domain/commands.neon
+  - app/domain/repositories.neon
+  - app/domain/selections.neon
+  - app/domain/series.neon
+  - app/domain/services.neon
+  - app/domain/storages.neon
+  - app/domain/strategies.neon
+  - app/domain/views.neon
+  - app/services/app.neon
+  - app/services/core.neon
+  - app/services/models.neon
+  - app/services/service.neon
+  - app/console.neon
+  - app/crons.neon
+  - app/factories.neon
+  - app/params.neon
+  - app/tables.neon
+  - extensions/events.neon
+  - extensions/nextras.neon
+  - extensions/slack.neon
+  - extensions/search.neon

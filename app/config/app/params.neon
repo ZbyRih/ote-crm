@@ -1,0 +1,29 @@
+parameters:
+	app:
+		autor: ""
+		title: OTE CRM
+		namespace: ''
+		statsLog: false
+		mail:
+			from:
+				email: "info@localhost"
+				name: OTE CRM
+		oteDirs:
+			root: "/ote"
+			backup: "/ote/emails"
+			others: "/ote/others"
+			undecrypted: "/ote/emails-undecrypted"
+			xmlMessages: "/ote/ote-xml"
+			xmlUnknown: "/ote/ukn-xml"
+		oteBoxes:
+			readed: Precteno
+			others: Ostatni
+
+		bankDirs:
+			root: "/banka"
+			others: "/banka/ostatni"
+			incomes: "/banka/platby"
+		bankBoxes:
+			others: Ostatni
+			incomes: Platby
+		fakturyDir: "/faktury"

@@ -1,0 +1,14 @@
+search:
+	models:
+		in: %appDir%/models
+		implements: 
+			- App\Extensions\Interfaces\IFactory
+			- App\Extensions\Interfaces\IService
+#			- App\Extensions\Interfaces\ICommand
+
+	modules:
+		in: %appDir%/modules
+		implements: 
+			- App\Extensions\Interfaces\IFactory
+			- App\Extensions\Interfaces\IService
+#			- App\Extensions\Interfaces\ICommand

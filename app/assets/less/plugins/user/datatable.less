@@ -1,0 +1,87 @@
+
+
+td.actions,td.mascts{
+	white-space: nowrap;
+	.actions i{
+		&.md, &.fa{
+			vertical-align: middle;
+		}
+	}
+}
+
+.actions a{
+	&.btn.btn-flat{
+		line-height: 1.1; 
+	}
+	font-size: 130%;
+	&:hover{
+		color: @brand-primary;
+	} 
+}
+
+.table-responsive {
+	overflow-x: inherit;
+}
+
+.dataTables_wrapper{
+  a{
+	&:hover{
+		color: @brand-primary;
+	} 
+  }
+  td a.ajax{
+	color: @brand-primary;
+  }
+  th.sorting,th.sorting_asc,th.sorting_desc{
+  	padding-left: 15px;
+  	&:hover{
+  		color: @brand-primary-dark;
+  	}
+  }
+  td .ma{
+  	vertical-align: middle;
+  }
+}
+
+table.dataTable thead .sort-alpha.sorting:before,
+table.dataTable thead .sort-alpha.sorting_asc:before,
+table.dataTable thead .sort-alpha.sorting_asc_disabled:before,
+table.dataTable thead .sort-alpha.sorting_desc:before,
+table.dataTable thead .sort-alpha.sorting_desc_disabled:before{
+	position: absolute;
+	left: 0px;
+}
+.dataTables_wrapper .dataTables_filter{
+	input[type=checkbox]{
+		vertical-align: middle;
+		width: 15px;
+		height: 15px;
+		margin-left: 15px;
+	}
+	label{
+		padding-right: 5px;	
+	}
+	.bootstrap-tagsinput{
+		display: inline-block;
+		border: none;
+		width: auto;
+	}
+	.twitter-typeahead {
+		width: auto;
+	}
+	.twitter-typeahead.form-control{
+		border: none;
+	}
+}
+.dataTables_wrapper .dataTables_ajax{
+	display: none;
+}
+
+.dataTables_wrapper td .form-control{
+	display: inline-block;
+}
+
+.dataTables_filter .form-control{
+	width: inherit;
+	display: inline-block;
+}

@@ -1,0 +1,1 @@
+<a href="mailto:{$d.value}" class="btn btn-raised btn-default-light ink-reaction"><i class="md md-email"></i></a>

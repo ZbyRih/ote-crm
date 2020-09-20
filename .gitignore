@@ -1,0 +1,16 @@
+admin/app/log/
+admin/app/temp/
+admin/app/data/
+admin/app/config/certs/
+admin/themes/standart/css/cache/
+app/log/
+app/temp/
+app/config/files/
+app/assets/ckeditor5-build-classic/node_modules
+data/
+libs/ckeditor/
+log/
+tests/_temp/
+tests/_log/
+tests/_data/
+upload/

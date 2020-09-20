@@ -1,0 +1,30 @@
+@import "./print/bootstrap.fix.less";
+@import "./print/print";
+@import "./print/common";
+@import "./print/doklad";
+@import "./print/zaloha";
+// @import "./print/smlouva";
+// @import "./print/faktura";
+@import "./print/utils";
+
+@media screen {
+	#buttons {
+		top: 2em;
+		right: 2em;
+		position: fixed;
+	}
+}
+
+@media print {
+	* {
+		-webkit-print-color-adjust: exact !important;
+		/*Chrome, Safari */
+		color-adjust: exact !important;
+		/*Firefox*/
+	}
+
+	#buttons {
+		display: none;
+		visibility: hidden;
+	}
+}

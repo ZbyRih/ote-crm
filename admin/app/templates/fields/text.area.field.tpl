@@ -1,0 +1,1 @@
+<textarea name="{$c.key}" id="{$c.key}" rows="5" class="{$class}" >{$d.value}</textarea>

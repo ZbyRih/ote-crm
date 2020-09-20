@@ -1,0 +1,20 @@
+extensions:
+    nextras.orm: Nextras\Orm\Bridges\NetteDI\OrmExtension
+
+nextras.orm:
+    model: App\Models\Orm\Orm
+ 
+services:
+  - Nextras\Dbal\Connection([
+      driver: mysqli
+      host: %app.db-host%
+      username: %app.db-user%
+      password: %app.db-pass%
+      database: %app.db-name%
+	  simpleStorageTz: Europe/Prague
+      connectionTz: auto-offset
+    ])
+
+tracy:
+  bar:
+    - Nextras\Dbal\Bridges\NetteTracy\ConnectionPanel  

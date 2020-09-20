@@ -1,0 +1,9 @@
+services:
+	- implement: App\Models\Strategies\Ote\IGP6MainStrategy
+	- implement: App\Models\Strategies\ILoadZalohyByRangeStrategy
+	- implement: App\Models\Strategies\ILoadPlatbyZalohByRangeStrategy
+	
+	- implement: App\Models\Strategies\ICreateRozpisZalohEntityStrategy
+	- implement: App\Models\Strategies\IZalohyDoFakturyStrategy
+	- implement: App\Models\Strategies\IZalohyDoRozpisuZalohStrategy
+  

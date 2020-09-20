@@ -1,0 +1,32 @@
+{block #buttons}
+{/block}
+
+{block #content-head}
+	{if $cislo}<header>Faktura č. {$cislo}</header>{/if}
+{/block}
+		
+{block content}
+	<div class="">
+		{control form}
+	</div>
+	{if $cislo}
+	{* break card *}
+	</div>
+	</div>
+	<div class="card card-underline">
+		<div class="card-head">
+			<header>Vyfakturované zprávy OTE</header>
+		</div>
+		<div class="card-body main">
+			{control ote}
+{*		</div>
+	</div>
+	<div class="card card-underline">
+		<div class="card-head">
+			<header>Připárované platby</header>
+		</div>
+		<div class="card-body main">
+			{control platby}
+*}
+	{/if}
+{/block}

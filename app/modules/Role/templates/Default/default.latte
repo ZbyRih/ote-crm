@@ -1,0 +1,13 @@
+{block #buttons}
+	{if $presenter->isAllowed('add')}
+		<a href="{link Edit:}" class="btn btn-raised btn-primary" title="Přidat roli"><i class="md md-add-box"></i> Přidat roli</a>
+	{/if}
+{/block}
+
+{block content}
+	<div class="">
+		{portlet}
+		{control roleGrid}
+		{/portlet}
+	</div>
+{/block}

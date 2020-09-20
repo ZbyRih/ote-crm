@@ -1,0 +1,9 @@
+parameters:
+  slackLogger:
+    enable: true
+    timeout: 60
+    slackUrl: https://hooks.slack.com/services/...
+    logUrl: '%app.basePath%log/get?file=__FILE__'
+    defaults:
+      channel: '#logs'
+      name: '%app.basePath%'

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="cs">
+	<head>
+		 <meta charset="utf-8">
+		 <title>{$title}</title>
+		 {wpm_script $basePath, '/dist/css/tisk_css.css'}
+	</head>
+	<body class="{$format} tisk">
+	{foreach $pages as $c}
+		{$c->getNode()->startTag()|noescape}
+		{$c->render()}
+		{$c->getNode()->endTag()|noescape}
+	{/foreach}
+	<div id="buttons">
+		{foreach $buttons as $b}
+		{$b}
+		{/foreach}
+		<a href="javascript:print();" class="btn btn-primary">Tisk</a>
+		<a n:if="$back" href="{$back}" class="btn btn-primary">Zpět</a>
+	</div>
+	</body>
+</html>

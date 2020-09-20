@@ -1,0 +1,1 @@
+<input type="hidden" name="{$c.key}" value ="{$d.value}" id="{$c.key}" />

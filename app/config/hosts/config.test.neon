@@ -1,0 +1,13 @@
+parameters:
+	app:
+		basePath: http://subdomain.localhost/
+		db-host: 127.0.0.1:3306
+		db-name: 
+		db-user: 
+		db-pass: 
+		mailManipulate: false
+		devBankBox:
+			server: '{localhost:143/notls/novalidate-cert}'
+			folder: 'INBOX'
+			login: 'banka@localhost'
+			pass: ''

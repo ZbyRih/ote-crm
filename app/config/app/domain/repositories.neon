@@ -1,0 +1,10 @@
+services:
+  - App\Models\Repositories\CiselnikyValuesRepository
+  - App\Models\Repositories\CiselnikyGroupsRepository
+  
+  - App\Models\Repositories\ActivityRepository
+  - App\Models\Repositories\InfoRepository
+  - App\Models\Repositories\OteMessageRepository
+  - App\Models\Repositories\RoleRepository
+  - App\Models\Repositories\SettingsRepository  
+  - App\Models\Repositories\UserRepository

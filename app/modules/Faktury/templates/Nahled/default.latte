@@ -1,0 +1,35 @@
+{block #buttons}
+	<a n:href="Default:" class="btn btn-primary btn-raised" title="Seznam faktur"><i class="md md-backspace"></i>&nbsp;Zpět</a>
+	<a n:if="$showPregenerovat" n:href="Pregenerovat: $id" class="btn btn-danger btn-raised ajax" data-confirm="Opravdu přegenrovat?" title="Přegenerovat"><i class="md md-refresh"></i>&nbsp;Přegenerovat</a>
+{/block}
+
+{*
+{block #content-head}
+	<header>Faktura č. {$cislo}</header>
+{/block}
+*}
+{block content}
+	<div>
+		{control view}
+	</div>
+	
+	{* break card *}
+	</div>
+	</div>
+	<div class="card card-underline">
+		<div class="card-head">
+			<header>Vyfakturované zprávy OTE</header>
+		</div>
+		<div class="card-body main">
+			{control ote}
+{*
+		</div>
+	</div>
+	<div class="card card-underline">
+		<div class="card-head">
+			<header>Připárované platby</header>
+		</div>
+		<div class="card-body main">
+			{control platby}
+*}
+{/block}

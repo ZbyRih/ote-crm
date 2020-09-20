@@ -1,0 +1,39 @@
+<div class="col-md-6">
+	{snippetArea form}
+	{form form}
+		
+		<ul n:if="$form->hasErrors()" class="alert alert-danger">
+			<p n:foreach="$form->getErrors() as $e"><i class="md md-warning"></i> {$e}</p>
+		</ul>
+		{define #input}
+		<div n:class="form-group, $form[$input]->required ? required">
+			<div class="col-sm-3 control-label">{$form[$input]->getLabel()}</div>
+			<div class="col-sm-9">{$form[$input]->getControl()}</div>
+		</div>
+		{/define}
+
+		{include #input, input => when}
+		{include #input, input => platba}
+		{include #input, input => fromCu}
+		{include #input, input => subject}
+		{include #input, input => vs}
+		{include #input, input => msg}
+		{include #input, input => dphCoef}
+		{include #input, input => type}
+
+		{snippet zarazeni}
+			{include #input, input => klientId}
+			{include #input, input => fakskupId}
+			{include #input, input => omId}
+		{/snippet}
+
+		<div class="form-group">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-9">
+				{input cancel}{input save}
+			</div>
+		</div>
+	{/form}
+	{/snippetArea}
+</div>

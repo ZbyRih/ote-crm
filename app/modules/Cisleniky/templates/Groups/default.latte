@@ -1,0 +1,16 @@
+
+{block #buttons}
+	{if $enableSwitch}
+		{control switch}
+	{/if}
+{/block}
+
+{block content}
+	{snippet skupina}
+	<div class="">
+		{portlet}
+			{control groupsGrid}
+		{/portlet}
+	</div>
+	{/snippet}
+{/block}

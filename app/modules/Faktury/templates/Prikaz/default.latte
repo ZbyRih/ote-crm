@@ -1,0 +1,50 @@
+{block #buttons}
+	<a n:href=":Faktury:Default:" class="btn btn-primary btn-raised" title="Seznam faktur"><i class="md md-list"></i>&nbsp;Seznam faktur</a>
+{/block}
+		
+{block content}
+	<div class="">
+		{portlet}
+		<table class="table table-striped no-margin table-condensed">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Vystaveno</th>
+					<th>Přeplatek</th>
+					<th>V.s.</th>
+					<th>Č.ú.</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+			{foreach $items as $i}
+				<tr>
+					<td>{$iterator->getCounter()}</td>
+					<td>{$i->fa->vystaveno->format('Y m.d.')}</td>
+					<td>{$i->fa->preplatek}</td>
+					<td>{$i->fa->cis}</td>
+					<td>{$i->cu}</td>
+					<td><a href="{link remove!, $ids, $i->fa->id}" class="btn btn-xs btn-danger">Odebrat</a></td>
+				</tr>
+			{/foreach}
+				<tr>
+					<th>Suma</th>
+					<th></th>
+					<th>{$suma}</th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+			<tbody>
+		</table>
+		{if $ids}
+		<div class="row">
+			<br />
+			<div class="col-md-12">
+				<a href="{link create!, $ids}" class="btn btn-primary"><i class="md md-file-download"></i>&nbsp;ABO Příkaz</a>
+			</div>
+		</div>
+		{/if}
+		{/portlet}
+	</div>
+{/block}

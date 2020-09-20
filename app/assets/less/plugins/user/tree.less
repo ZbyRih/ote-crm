@@ -1,0 +1,160 @@
+div.tree{
+	>ul{
+		display: table;
+		border-collapse: collapse;
+		>li:nth-of-type(odd){
+			background-color: transparent;
+		}
+		>li:nth-of-type(even){
+			background-color: rgba(242, 242, 243, 0.35);
+		}
+		>li{
+			display: table-row;
+			line-height: 39px;
+
+			&:hover{
+				background-color: rgba(229, 229, 230, 0.25);				
+			}
+			
+			&.head{
+				opacity: 0.75;
+				background-color: transparent;
+				&:hover{
+					background-color: transparent;				
+				}
+				>span{
+					border-top: none;
+					border-bottom: 2px solid rgba(189, 191, 193, 0.2);
+					cursor: pointer;
+					font-weight: 500;
+				}
+			}
+			
+			&.selected{
+				background-color: @brand-primary;
+				color: white;
+				a{
+					color: white !important;
+					&:hover{
+						color: @brand-default-light !important;
+					}
+				}
+			}
+			
+			>span{
+				@line-color: @gray-light;
+				padding-left: 8px;
+				display: table-cell;
+				vertical-align: baseline;
+				border-top: 1px solid rgba(189, 191, 193, 0.2);
+				position: relative;
+				span.ico{
+					display: inline-block;
+					width: 24px;
+					height:24px;
+					position: relative;
+					i.tree-straight{ 
+						position: absolute;
+						top: 0px;
+						left: 8px;
+						width: 2px;
+						height: 100%;
+						border-left: 2px solid @line-color;
+						opacity: 0.7;
+					}
+					i.tree-mid{ 
+						position: absolute;
+						top: 0px;
+						left: 8px;
+						width: 2px;
+						height: 100%;
+						border-left: 2px solid @line-color;
+						opacity: 0.7;
+						&::after{
+							content:" ";
+							position: absolute;
+							top: 19px;
+							left: 0px;
+							width: 17px;
+							height: 2px;
+							border-top: 2px solid @line-color;
+						}
+					}
+					i.tree-end{ 
+						position: absolute;
+						top: 0px;
+						left: 8px;
+						width: 2px;
+						height: 21px;
+						border-left: 2px solid @line-color;
+						opacity: 0.7;
+						&::after{
+							content:" ";
+							position: absolute;
+							top: 19px;
+							left: 0px;
+							width: 18px;
+							height: 2px;
+							border-top: 2px solid @line-color;
+						}
+					}
+					&.tree{
+						position: absolute;
+						height: 100%;
+					}
+				}
+				
+				span.spacer{
+					width: 24px;
+				    height: 24px;
+				    display: inline-block;
+				}
+				
+				&.name,&.actions,&.mascts{
+					white-space: nowrap;
+					.actions i{
+						&.md, &.fa{
+							vertical-align: middle;
+						}
+					}
+				}
+				&.add{
+					-webkit-column-span: all;
+					-moz-column-span: all;
+					column-span: all;					
+				}
+				.ma{
+					vertical-align: middle;
+				}
+				.tree-add{
+					padding-left: 5px;
+				}
+			}
+		}
+		span.sorting,span.sorting_asc,span.sorting_desc{
+			padding-left: 15px;
+			&:hover{
+				color: @brand-primary-dark;
+			}
+		}
+		a{
+			&:hover{
+				color: @brand-primary;
+			} 
+		}
+		a.sel{
+			cursor: pointer;
+		}
+		span a.ajax{
+			color: @brand-primary;
+		}
+		span .form-control{
+			display: inline-block;
+		}
+	}
+}
+.tree-wrapper{
+	.dataTables_ajax{
+		display: none;
+	}
+}

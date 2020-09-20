@@ -1,0 +1,3 @@
+services:
+  - App\Models\Series\FakturaSeries
+  - App\Models\Series\DokladSeries

@@ -1,0 +1,20 @@
+{block #page-head}
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="cs" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta http-equiv="imagetoolbar" content="no" />
+
+    <meta name="abstract" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <meta name="copyright" content="{_'app.copyright'}{date('Y')}" />
+    <meta name="author" content="{_'app.autor'}" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="rating" content="general" />
+    
+    <link rel="shortcut icon" type="image/x-icon" href="{wpm_file $basePath, '/dist/css/favicon.ico'}">
+
+	 <base href="{$basePath|noescape}{$subfolder|noescape}" />
+    <title>{$headTitle}</title>
+{/block}

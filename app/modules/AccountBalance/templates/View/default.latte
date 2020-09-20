@@ -1,0 +1,19 @@
+{block #buttons}
+	<a n:href="Default:" class="btn btn-primary btn-raised" title="Seznam"><i class="md md-list"></i>&nbsp;Seznam</a>
+{/block}
+		
+{block content}
+	<div class="">
+		{portlet}
+		{control nav}
+		
+		{if $view == 'list'}
+		{control list}
+		{/if}
+		{if $view == 'compact'}
+		{control compact}
+		{/if}
+		
+		{/portlet}
+	</div>
+{/block}

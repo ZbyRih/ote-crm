@@ -1,0 +1,5 @@
+Carbon\Carbon::__set_state(/* #bb08 */ [
+	'date' => '1970-11-30 00:00:00.000000',
+	'timezone_type' => 3,
+	'timezone' => 'Europe/Prague',
+])

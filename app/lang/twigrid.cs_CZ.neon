@@ -1,0 +1,27 @@
+filters:
+  filter: "Filtr"
+  cancel: "Zrušit"
+    
+data:
+  no_data: "Žádná data"
+
+inline:
+  edit: "Upravit"
+  edit_confirm: "Potvrdit"
+  cancel: "Zrušit"
+
+group_actions:
+  checked: "Vybráno:"
+  checked_count_message: "Prosím vyberte alespoň jednu položku"
+
+pagination:
+  previous: "Předchozí"
+  next: "Další"
+  total: "%d položek"
+  page_required: "Prosím vyberte stránku na kterou se má přejít"
+  page_integer: "Číslo stránku musí být číslo"
+  page_range: "Číslo stránky musí být větší než jedna a menší než počet stránek"
+  change: "Přejít"
+  
+security_token:
+  expire: "Bezpečnostní token vypršel. Reloudněte si stránku"

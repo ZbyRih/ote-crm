@@ -1,0 +1,16 @@
+{if $visible}
+{if $empty}
+<p class="alert alert-warning">Źádná data</p>
+{else}
+<div class="tabbable-line">
+	<ul class="nav nav-tabs">
+		{foreach $items as $i}
+		<li n:class="$selected == $i->key ? active, $i->disabled ? disabled">
+			<a {if !$i->disabled}href="{link change!, $i->key}"{/if}>{$i->label|firstUpper}</a>
+		</li>
+		{/foreach}
+	</ul>
+	<div class="tab-content"></div>
+</div>
+{/if}
+{/if}

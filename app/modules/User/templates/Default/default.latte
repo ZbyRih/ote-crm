@@ -1,0 +1,14 @@
+{block content}
+	<div class="">
+		{portlet}
+		{if $presenter->isAllowed('add')}
+			<a href="{link Edit:}" class="btn btn-primary" title="Přidat uživatele">Přidat uživatele</a>
+		{/if}
+		{/portlet}
+	</div>
+	<div class="">
+		{portlet}
+		{control usersGrid}
+		{/portlet}
+	</div>
+{/block}

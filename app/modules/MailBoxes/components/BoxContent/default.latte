@@ -1,0 +1,28 @@
+{snippet box}
+<div class="col-md-3">
+	<h4><em>{$server}</em></h4>
+	<ul class="list divider-full-bleed">
+		<li class="tile" n:foreach="$folders as $k => $f">
+			<a n:href="folder! $k" n:class="$k == $folder ? 'btn-flat btn-primary',tile-content,ink-reaction,ajax">
+				<div class="tile-text">{$f}</div>
+			</a>
+		</li>
+	</ul>
+</div>
+<div class="col-md-9">
+	<table class="table table-stripped table-condensed">
+		<tr>
+			<th>From</th>
+			<th>Date</th>
+			<th>Subject</th>
+			<th>Message ID</th>
+		</tr>
+		<tr n:foreach="$mails as $m">
+			<td>{$m->from}</td>
+			<td>{isset($m->date) ? $m->date : ''}</td>
+			<td>{$m->subject}</td>
+			<td>{$m->message_id}</td>
+		</tr>
+	</table>
+</div>
+{/snippet}

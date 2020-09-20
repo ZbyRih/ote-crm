@@ -1,0 +1,11 @@
+parameters:
+  app:
+    privilege:
+      User:
+        - relog
+        - activity
+      Role:
+        - change
+      Klients:
+        - change_owner
+        - view_all

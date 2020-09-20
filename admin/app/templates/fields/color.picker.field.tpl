@@ -1,0 +1,2 @@
+<div id="cs_{$c.key}" class="{$class} ColorSelector"><div style="background-color: #{if !$d.value}000000{else}{$d.value}{/if};"></div></div>
+<input type="hidden" name="{$c.key}" value="{if !$d.value}000000{else}{$d.value}{/if}" id="inp_{$c.key}" />

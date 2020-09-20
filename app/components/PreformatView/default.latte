@@ -1,0 +1,8 @@
+{block formated}
+	<h3>{$title}</h3>
+	<pre n:if="$type == App\Components\PreformatView::TYPE_PRE">{$content|noescape}</pre>
+	{if $type == App\Components\PreformatView::TYPE_HTML}
+	<div id="preformat-view"></div>	
+	<textarea style="display:none" id="preformat-src">{$content|noescape}</textarea>
+	{/if}
+{/block}

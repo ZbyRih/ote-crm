@@ -1,0 +1,1 @@
+<a href="mailto:{$d}"><i class="md md-email"></i></a>

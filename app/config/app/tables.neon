@@ -1,0 +1,27 @@
+services:
+
+  - App\Models\Tables\RoleTable
+  - App\Models\Tables\UserTable
+  - App\Models\Tables\CiselnikyValuesTable
+  - App\Models\Tables\CiselnikySkupinyTable
+  
+  - App\Models\Tables\SettingsTable
+  
+  - App\Models\Tables\ActivityTable
+  - App\Models\Tables\DokladyTable
+  - App\Models\Tables\FakSkupTable
+  - App\Models\Tables\FakturaTable  
+  - App\Models\Tables\HelperTable
+  - App\Models\Tables\InfoTable
+  - App\Models\Tables\KlientsTable
+  - App\Models\Tables\PairingTable
+  - App\Models\Tables\PlatbaTable
+  - App\Models\Tables\OdberMistTable
+  - App\Models\Tables\OteBodyTable
+  - App\Models\Tables\OteHeadTable
+  - App\Models\Tables\OteMessageTable
+  - App\Models\Tables\SpotrebaTable
+  - App\Models\Tables\TagsTable
+  - App\Models\Tables\ZalohaTable
+  - App\Models\Tables\SmlOmTable
+  

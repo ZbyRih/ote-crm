@@ -1,0 +1,4 @@
+<h4>{$header}</h4>
+<ul>
+	<li n:foreach="$items as $i" class="{$classes[$i->type]}">{continueIf $i->msg instanceof \stdClass}{$i->msg}</li>
+</ul>

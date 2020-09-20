@@ -1,0 +1,9 @@
+{
+	"params":[
+		, { "field":"theme", "title":"Téma", "type": 8, "default": 0, "num":"0", "active": true, "access": 3}						
+		, { "field":"delegate", "title":"může měnit nastavení jiným uživatelů,", "type": 10, "default": 0, "num":"0", "active": true, "access": 3}
+		, { "field":"onlyown", "title":"Vidí jen svoje záznamy", "type": 10, "default": 0, "num":"0", "active": true, "access": 3}						
+		, { "field":"platby", "title":"Načítání plateb", "type": 10, "default": 0, "num":"0", "active": true, "access": 3}						
+		, { "field":"chowner", "title":"Právo měnit vlastníka", "type": 10, "default": 0, "num":"0", "active": true, "access": 3}						
+	]
+}

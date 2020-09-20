@@ -1,0 +1,27 @@
+services:
+  - implement: App\Components\Service\IServices
+  - implement: App\Components\Service\ITestMailDlg
+  
+  - App\Components\Service\Services
+  - App\Components\Service\ServiceEnv
+  - App\Components\Service\ServiceOpcache
+  - App\Components\Service\ServiceParams
+  - App\Components\Service\ServicePhp
+  - App\Components\Service\ServiceStats
+  - App\Components\Service\ServiceXcache
+  - App\Components\Service\ServiceNette
+  - App\Components\Service\ServiceLog
+    
+parameters:
+  app:
+    service:
+      namespace: App\Components\Service
+      panels:
+        - php
+        - nette
+        - log        
+        - opcache
+        - xcache
+        - stats
+        - env
+        - params

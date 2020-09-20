@@ -1,0 +1,5 @@
+DateTime::__set_state(/* #4786 */ [
+	'date' => '1970-11-30 00:00:00.000000',
+	'timezone_type' => 3,
+	'timezone' => 'Europe/Prague',
+])

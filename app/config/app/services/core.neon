@@ -1,0 +1,11 @@
+services:
+  - App\Extensions\App\Mailer
+  - App\Extensions\App\LoggerSection
+  - App\Extensions\App\User\Authenticator
+  
+  user: App\Extensions\App\User\User
+  tracy.logger: App\Extensions\App\Logger
+  router: App\Extensions\App\RouterFactory::createRouter
+  nette.latteFactory:
+    setup:
+      - addFilter(null, App\Extensions\App\LatteFilters::common)

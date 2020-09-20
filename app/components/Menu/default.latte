@@ -1,0 +1,38 @@
+{block menu}
+	<div class="menubar-scroll-panel">
+		<ul id="main-menu" class="gui-controls">
+		{foreach $nodes as $m}
+			{if $m->nodes}
+			<li class="gui-folder{if $m->active} expanded active{/if}">
+				<a href="javascript:;">
+					<div class="gui-icon"><i class="{$m->icon}"></i></div>
+					<span class="title">{$m->title}</span>
+				</a>
+				<ul class="gui-controls">
+					{foreach $m->nodes as $sm}
+					<li class="{if $sm->active} active{/if}">
+						<a href="{$sm->url}">
+							<div class="gui-icon"><i class="{$sm->icon}"></i></div>
+							<span class="title">{$sm->title}</span>
+						</a>
+					</li>
+					{/foreach}
+				</ul>
+			</li>
+			{else}
+			<li class="{if $m->active} active{/if}">
+				<a href="{$m->url}">
+					<div class="gui-icon"><i class="{$m->icon}"></i></div>
+					<span class="title">{$m->title}</span>
+				</a>
+			</li>
+			{/if}
+		{/foreach}
+		</ul>
+		<div class="menubar-foot-panel">
+			<small class="no-linebreak hidden-folded">
+				<span class="opacity-75">{_app.copyright}{date('Y')}</span><br /><strong>{_app.autor}</strong>
+			</small>
+		</div>				
+	</div>
+{/block}

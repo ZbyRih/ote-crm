@@ -1,0 +1,23 @@
+{block #buttons}
+	{include ../head.latte}
+{/block}
+		
+{block content}
+	<div class="">
+		{portlet}
+		
+		<div n:if="$msg" class="alert alert-info">
+			{$msg}
+		</div>
+		
+		<ul n:if="$fails">
+			<li n:foreach="$fails as $f" class="alert alert-warning">{$f}</li>
+		</ul>
+		
+		<ul n:if="$errors">
+			<li n:foreach="$errors as $e" class="alert alert-danger">{$e}</li>
+		</ul>
+		
+		{/portlet}
+	</div>
+{/block}

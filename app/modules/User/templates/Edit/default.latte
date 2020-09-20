@@ -1,0 +1,23 @@
+{block content}
+	<div class="">
+		{portlet $title}
+		<div class="tab-content" id="nested-sort-structure-view">
+			<div class="tabbable-line">
+				{if $id}
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="{link Edit:, $id}">Údaje</a></li>
+{*					<li class=""><a href="{link Profil:, $id}">Profil</a></li> *}
+					{if $user->isInRole('super')}
+					<li class=""><a href="{link Prava:, $id}">Práva</a></li>
+					{/if}
+				</ul>
+				{/if}
+				<div class="tab-content">
+					{control editForm}
+				</div>
+			</div>
+		</div>
+		{/portlet}
+	
+	</div>
+{/block}

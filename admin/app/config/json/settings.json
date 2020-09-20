@@ -1,0 +1,135 @@
+{
+	"groups":[
+		{
+			  "name": "Hlavní"
+			, "active": true
+			, "items":[
+				  {"key": "DEN_SPLATNOSTI", "name": "Den splatnosti", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "DPH", "name": "DPH", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "DAN_Z_PLN", "name": "Daň z plynu (sazba za MWh)", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "DPH_KOEF", "name": "Koeficient přepočtu dph", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "UHRADA", "name": "Typ úhrady", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "CU_OBCHODNIKA", "name": "Číslo účtu na doklady", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "OBCHODNIK_IDENT_A", "name": "Identifikace obchodníka A", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "OBCHODNIK_IDENT_B", "name": "Identifikace obchodníka B", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "ADMIN_NAME", "name": "Aplikace", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "COPYRIGHT", "name": "Copyright", "access": 1, "field": 1, "lang": 0, "visible": true}
+				, {"key": "AUTOR", "name": "Autor", "access": 1, "field": 1, "lang": 0, "visible": true}
+			]
+		}
+		, {
+			  "name": "Číselníky"
+			, "active": true
+			, "items":[
+				  {"key": "CISELNIK_FAK_SKUP", "name": "Definice číelníku fak. skupiny", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "CISELNIK_FAKTUR", "name": "Definice číelníku faktur", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "CISELNIK_DOKLAD_PRIJEM", "name": "Definice číelníku daňového přijmového dokladu", "access": 0, "field": 1, "lang": 0, "visible": true}
+			]
+		}
+		, {
+			  "name": "Hlavní"
+			, "active": false
+			, "items":[
+				  {"key": "MENU_DEFAULT", "name": "Home stránka", "access": 0, "field": 13, "lang": 1, "visible": true}
+				, {"key": "MENU_ERROR", "name": "Chybová stránka", "access": 0, "field": 13, "lang": 1, "visible": true}
+				, {"key": "LAYOUT_TITLE_SUFFIX", "name": "Začátek titulku stránky", "access": 0, "field": 1, "lang": 1, "visible": true}
+				, {"key": "DEFAULT_LAYOUT", "name": "Výchozí rozvžení stránky", "access": 0, "field": 8, "lang": 0, "visible": true}
+				, {"key": "DEFAULT_TITLE", "name": "Základní titulek stránky", "access": 0, "field": 1, "lang": 1, "visible": true}
+				, {"key": "DEFAULT_DESCRIPTION", "name": "Základní popis stránek", "access": 0, "field": 12, "lang": 1, "visible": true}
+				, {"key": "DEFAULT_KEYWORDS", "name": "Základní klíčová slova", "access": 0, "field": 12, "lang": 1, "visible": true}
+				, {"key": "MENU_SEARCHING", "name": "Stránka - vyhledávání", "access": 0, "field": 13, "lang": 1, "visible": false}
+				, {"key": "NEWS_SENDER_TITLE", "name": "Nadpis mailu s rozposlanou novinkou", "access": 0, "field": 1, "lang": 1, "visible": false}
+				, {"key": "LAYOUT_TEMPLATES", "name": "šablony rozvržení", "access": 1, "field": 1, "lang": 0, "visible": false}
+				, {"key": "MENU_DOWNLOAD", "name": "Menu download", "access": 0, "field": 13, "lang": 1, "visible": false}
+				, {"key": "ERR_REPORT_MAIL", "name": "Error feedback mail", "access": 1, "field": 1, "lang": 0, "visible": true}
+				, {"key": "HEAD_SLIDESHOW_SPEED", "name": "Rychlost slideshow v hlavičce (ms)", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "HEAD_SLIDESHOW_FADE", "name": "Slideshow v hlavičce rychlost přechodu (ms)", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "MENUSET_HEAD", "name": "Bloku menu v hlacičce", "access": 0, "field": 14, "lang": 0, "visible": true}
+			]
+		}	
+		, {
+			  "name": "Patička"
+			, "active": false
+			, "items":[
+				  {"key": "COPYRIGHT", "name": "Copyright", "access": 0, "field": 1, "groupid": 13, "lang": 1, "visible": true}
+				, {"key": "DESIGNED_BY_LINK", "name": "Designed by link", "access": 0, "field": 1, "lang": 0, "visible": false}
+				, {"key": "DESIGNED_BY", "name": "Designed by popis", "access": 0, "field": 1, "lang": 0, "visible": false}
+				, {"key": "CREATED_BY_LINK", "name": "Created by link", "access": 1, "field": 1, "lang": 0, "visible": true}
+				, {"key": "CREATED_BY", "name": "Created by popis", "access": 1, "field": 1, "lang": 0, "visible": true}
+				, {"key": "CREATED_BY_PRE", "name": "Vytvořeno před", "access": 0, "field": 1, "lang": 1, "visible": true}
+				, {"key": "WEB_DESIGN_MID", "name": "Web design mezi", "access": 0, "field": 1,  "lang": 0, "visible": false}
+				, {"key": "PAGE_FOOTER", "name": "Obsah paticky stranky(google analytics, atd.)", "access": 0, "field": 12, "lang": 0, "visible": true}
+				, {"key": "PAGE_GA_UAR", "name": "Google Analytics UAR", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "COPY_ALL_RR", "name": "Všechna práva vyhrazena", "access": 0, "field": 1, "lang": 1, "visible": true}
+				, {"key": "COPY_FOR", "name": "Vytvořeno pro", "access": 0, "field": 1, "lang": 1, "visible": true}
+				, {"key": "COPY_FOR_LINK", "name": "Vytvořeno pro - link", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "MENUSET_FOOT", "name": "Socialní ikony", "access": 0, "field": 14, "lang": 0, "visible": true}
+			]
+		}	
+		, {
+			  "name": "E-Shop (CRM)"
+			, "active": false
+			, "items":[
+				  {"key": "REG_EMAIL", "name": "Odesilatel registracniho e-mailu", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "BILL_PARAM", "name": "Účet do mailu", "access": 1, "field": 12, "lang": 0, "visible": true}
+				, {"key": "EMAIL_POST_SUBJECT", "name": "dodatek k předmětu e-mailu", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "MENU_LOGIN_LINK", "name": "Stránka přihlášení", "access": 0, "field": 13, "lang": 0, "visible": true}
+				, {"key": "MENU_REG_LINK", "name": "Stránka registrční", "access": 0, "field": 13, "lang": 0, "visible": true}
+				, {"key": "MENU_LOGOUT_LINK", "name": "Stránka odhlášení", "access": 0, "field": 13, "lang": 0, "visible": true}
+				, {"key": "MENU_BASKET_LINK", "name": "Stránka košíku", "access": 0, "field": 13, "lang": 0, "visible": true}
+				, {"key": "MENU_OBCHPOD_LINK", "name": "Stránka s obchodními podmínkami", "access": 0, "field": 13, "lang": 0, "visible": true}
+				, {"key": "PC_LIST_NONE", "name": "None hodnota položek z pick-listů", "access": 1, "field": 1, "lang": 0, "visible": true}
+				, {"key": "OBJ_EMAIL_FROM", "name": "Odesilatel objednávky", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "OBJ_EMAIL_BCC", "name": "Kam preposlat skryte objednavky(BCC)(oddelovat ;)", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "INV_PREFIX", "name": "Prefix pro fakturu", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "SO_PREFIX", "name": "Začátek názvu objednávky", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "PAGER_PROD_I2P_A", "name": "Možnosti počtu položek na stránku (produkty)", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "PAGER_PROD_NOPITEMS", "name": "Maximum zobrazenych stránek ve stránkovaní (produkty)", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "PAGER_PROD_DEFSIZE", "name": "Defaultní počet položek na stránce (produkty)", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "NUM_PROD_INSHORT_LIST", "name": "Počet produktů po stranách", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "PD_DEFAULT_L", "name": "Rozvžení pro detail", "access": 0, "field": 8, "": 15, "lang": 0, "visible": true}
+				, {"key": "KONTAKTS_REGULAR_REG", "name": "Skupina full registrace", "access": 0, "field": 8, "lang": 0, "visible": true}
+				, {"key": "KONTAKTS_SHORT_REG", "name": "Skupina jednoázové registrace", "access": 0, "field": 8, "lang": 0, "visible": true}
+			]
+		}	
+		, {
+			  "name": "Galerie"
+			, "active": false
+			, "items":[
+				  {"key": "PAGER_GAL_I2P_A", "name": "Počty položek na stránce (galerie)", "access": 1, "field": 1, "lang": 0, "visible": true}
+				, {"key": "PAGER_GAL_NOPITEMS", "name": "Počet stránek v nabídce (galerie)", "access": 1, "field": 1, "lang": 0, "visible": true}
+				, {"key": "PAGER_GAL_DEFSIZE", "name": "Defaultní počet položek na stránce (galerie)", "access": 1, "field": 1, "lang": 0, "visible": true}
+				, {"key": "PAGER_GAL_A_DEFSIZE", "name": "Defaultní počet položek na stránce (archiv galerií)", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "PAGER_GAL_A_NOPITEMS", "name": "Počet stránek v nabídce (archiv galerií)", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "PAGER_GAL_A_I2P_A", "name": "Počty položek na stránce (archiv galerií)", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "GAL_ARCHIV", "name": "Archiv galerií", "access": 0, "field": 13, "lang": 1, "visible": true}
+			]
+		}		
+		, {
+			  "name": "Novinky"
+			, "active": false
+			, "items":[
+				  {"key": "PAGER_NEWS_I2P_A", "name": "Volby pocetu polozek na stranku (novinky)(oddelovat ,)", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "PAGER_NEWS_NOPITEMS", "name": "Pocet stranek v nabidce (novinky)", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "PAGER_NEWS_DEFSIZE", "name": "Defaultni pocet polozek (novinky)", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "NEWS_ARCHIVE", "name": "Polozka menu s archivem novinek", "access": 0, "field": 13, "lang": 1, "visible": true}
+				, {"key": "NUM_NEWS_INSHORT_LIST", "name": "Počet novinek layout elementu", "access": 0, "field": 1, "lang": 0, "visible": true}
+				, {"key": "NEWS_DESC_TRIM", "name": "Délka obsahu novinky v náhledu", "access": 0, "field": 1, "lang": 0, "visible": true}
+			]
+		}		
+		, {
+			  "name": "Reference"
+			, "active": false
+			, "items":[
+				 {"key": "REFERENCE_ARCHIVE", "name": "Archiv referencí", "access": 0, "field": 13, "lang": 1, "visible": true}
+			]
+		}		
+	]
+	, "spec": [
+		  {"type": "layout", "items" : [{"key": "DEFAULT_LAYOUT"}, {"key": "PD_DEFAULT_L"}]}
+		, {"type": "contact", "items": [{"key": "KONTAKTS_REGULAR_REG"}, {"key": "KONTAKTS_SHORT_REG"}]} 	
+	]
+	, "functions":[
+		
+	]  	
+}

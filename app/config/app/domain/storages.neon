@@ -1,0 +1,6 @@
+services:
+  - App\Extensions\App\PersistentParameterSessionStorage
+  
+  - App\Models\Storages\CiselnikyCacheStorage
+  - App\Models\Storages\RolesCacheStorage
+  - App\Models\Storages\SettingsCacheStorage

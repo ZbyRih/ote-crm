@@ -1,0 +1,19 @@
+{block content}
+	<div class="">
+		{portlet $title}
+		<div class="tab-content" id="nested-sort-structure-view">
+			<div class="tabbable-line">
+				<ul class="nav nav-tabs">
+					<li class=""><a href="{link Edit:, $id}">Údaje</a></li>
+{*					<li class=""><a href="{link Profil:, $id}">Profil</a></li> *}
+					<li class="active"><a href="{link Prava:, $id}">Práva</a></li>
+				</ul>
+				<div class="tab-content">
+					{control editForm}
+				</div>
+			</div>
+		</div>
+		{/portlet}
+	
+	</div>
+{/block}

@@ -1,0 +1,48 @@
+# definovani rolí
+services:
+  acl:
+    factory: App\Extensions\App\User\Authorizator #Nette\Security\Permission
+    setup:
+      - addRole(guest)
+#      - addRole(admin, guest)
+#      - addRole(sell, guest)
+#      - addRole(ucto, guest)
+#      - addRole(super, guest)
+
+      - addResource(Sign)
+      - addResource(Homepage)
+      - addResource(Denied)
+      - addResource(Klients)
+      - addResource(Nastaveni)
+      - addResource(Settings)
+      - addResource(User)
+      - addResource(Role)
+      - addResource(Ciselniky)
+      - addResource(Service)
+      - addResource(Logs)
+      - addResource(Helper)
+      - addResource(Tags)
+      - addResource(OteAComSettings)
+      - addResource(FakSkups)
+      - addResource(OdberMist)
+      - addResource(Zalohy)
+      - addResource(Faktury)
+      - addResource(OteGP6)
+      - addResource(Pohyby)
+      - addResource(Platby)
+      - addResource(OteZpravy)
+      - addResource(Activity)
+      - addResource(Info)
+      - addResource(Templates)
+      - addResource(Legacy)
+      - addResource(MailBoxes)
+      - addResource(AccountBalance)
+
+      - allow(guest, Sign)
+      - allow(guest, Denied)
+
+parameters:
+  app:
+    defaultViews:
+      Homepage: ':Homepage'
+      Klients: ':Klients:Default'

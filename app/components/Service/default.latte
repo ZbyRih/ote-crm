@@ -1,0 +1,13 @@
+<div class="btn-block margin-bottom-20">
+	<a href="{link testSlack!}" class="btn btn-primary" title="Test slack">Test slack</a>
+	<a href="{link testException!}" class="btn btn-primary" title="Test exception">Test exception</a>
+	<a href="{link testCreateDir!}" class="btn btn-default" title="Test vytvoření adresáře">Test vytvoření adresáře</a>
+	<a href="#test_mail" class="btn btn-primary" data-toggle="modal">Test email</a>
+</div>
+<div class="row">
+	{foreach $panels as $k => $p}
+	{control $k}
+	{if !($iterator->counter % 3)}</div><div class="row">{/if}
+	{/foreach}
+</div>
+{control testMailDlg}

@@ -1,0 +1,2191 @@
+{
+	"modules": [
+		{
+			"module": "contacts",
+			"forms": {
+				"main": [
+					{
+						"field": "ContactDetails.firstname",
+						"title": "Křestní jméno",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "ContactDetails.lastname",
+						"title": "Přijmení",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next"
+					},
+					{
+						"field": "ContactDetails.title",
+						"title": "Oslovení",
+						"type": 8,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next"
+					},
+					{
+						"field": "ContactDetails.birth_date",
+						"title": "Datum narození",
+						"type": 11,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000",
+						"inline": "last"
+					},
+					{
+						"field": "ContactDetails.telnumber",
+						"title": "Tel. mobil",
+						"type": 1,
+						"default": "+420 ",
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "+420 000 000 000",
+						"inline": "first"
+					},
+					{
+						"field": "ContactDetails.tel2",
+						"title": "Tel. pevná",
+						"type": 1,
+						"default": "+420 ",
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "+420 000 000 000",
+						"inline": "next"
+					},
+					{
+						"field": "ContactDetails.zasilat_mailem",
+						"title": "Zasílat e-mailem",
+						"type": 10,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next"
+					},
+					{
+						"field": "ContactFlags.have_mail",
+						"title": "Nemá e-mail",
+						"type": 10,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "last"
+					},
+					{
+						"field": "ContactDetails.email",
+						"title": "E-Mail",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "ContactDetails.email",
+						"title": "Poslat e-mail",
+						"type": 27,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "ContactDetails.kind",
+						"title": "Právní forma",
+						"type": 8,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "ContactDetails.organ",
+						"title": "Statutární orgán",
+						"type": 1,
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3,
+						"inline": "last"
+					},
+					{
+						"field": "ContactDetails.firm_name",
+						"title": "Název firmy",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "ContactDetails.ico",
+						"title": "IČO",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "ContactDetails.dico",
+						"title": "DIČ",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "last"
+					},
+					{
+						"field": "ContactDetails.cu",
+						"title": "Číslo účtu",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "ContactDetails.cis_smluv",
+						"title": "Číslo smlouvy",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "ContactDetails.plat_smluv_od",
+						"title": "Platnost smlouvy od",
+						"type": 11,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "last",
+						"mask": "09.09. 0000"
+					},
+					{
+						"title": "Fakturační adresa (sídlo)",
+						"type": 25,
+						"active": true
+					},
+					{
+						"field": "Address.street",
+						"title": "Ulice",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "Address.cp",
+						"title": "Č.p.",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next",
+						"mask": "0000A"
+					},
+					{
+						"field": "Address.co",
+						"title": "Č.o.",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "last",
+						"mask": "AAAAA"
+					},
+					{
+						"field": "Address.city",
+						"title": "Město",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "Address.zip",
+						"title": "PSČ",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "000 00",
+						"inline": "last"
+					},
+					{
+						"title": "Korespondenční (pokud je jiná než fakturační)",
+						"type": 25,
+						"active": true
+					},
+					{
+						"field": "ContactDetails.korespond_name",
+						"title": "Oslovení",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Korespond.street",
+						"title": "Ulice",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "Korespond.cp",
+						"title": "Č.p.",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next",
+						"mask": "0000A"
+					},
+					{
+						"field": "Korespond.co",
+						"title": "Č.o.",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "last",
+						"mask": "AAAAA"
+					},
+					{
+						"field": "Korespond.city",
+						"title": "Město",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "Korespond.zip",
+						"title": "PSČ",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "000 00",
+						"inline": "last"
+					},
+					{
+						"field": "Contacts.owner_id",
+						"title": "Zodpovědná osoba",
+						"type": 8,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1
+					},
+					{
+						"field": "Contacts.created_by",
+						"title": "Vytvořil",
+						"type": 8,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1
+					}
+				],
+				"address": [
+					{
+						"field": "Address.street",
+						"title": "Ulice",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "Address.cp",
+						"title": "Č.p.",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next",
+						"mask": "0000A"
+					},
+					{
+						"field": "Address.co",
+						"title": "Č.o.",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "last",
+						"mask": "AAAAA"
+					},
+					{
+						"field": "Address.city",
+						"title": "Město",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "Address.zip",
+						"title": "PSČ",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "000 00",
+						"inline": "last"
+					}
+				],
+				"tags": [
+					{
+						"field": "user_tags",
+						"title": "Štítky",
+						"type": 21,
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3
+					}
+				]
+			}
+		},
+		{
+			"module": "fakskup",
+			"forms": {
+				"fak_skup": [
+					{
+						"field": "FakSkup.nazev",
+						"title": "Název fak. skup.",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "FakSkup.cis",
+						"title": "Číslo fa. skup.",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1,
+						"valids": "no_empty,len:len=10,num",
+						"inline": "last"
+					},
+					{
+						"field": "ContactDetails.firstname",
+						"title": "Křestní jméno",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "ContactDetails.lastname",
+						"title": "Přijmení",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next"
+					},
+					{
+						"field": "ContactDetails.title",
+						"title": "Oslovení",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "last"
+					},
+					{
+						"field": "ContactDetails.birth_date",
+						"title": "Datum narození",
+						"type": "11",
+						"default": null,
+						"num": "0",
+						"active": false,
+						"access": 3,
+						"mask": "09.09. 0000"
+					},
+					{
+						"field": "ContactDetails.telnumber",
+						"title": "Telefonní číslo",
+						"type": "1",
+						"default": "+420 ",
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "+420 000 000 000",
+						"inline": "first"
+					},
+					{
+						"field": "ContactDetails.zasilat_mailem",
+						"title": "Zasílat e-mailem",
+						"type": 10,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "last"
+					},
+					{
+						"field": "ContactDetails.email",
+						"title": "E-Mail",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "ContactDetails.firm_name",
+						"title": "Název firmy",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "ContactDetails.ico",
+						"title": "IČO",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "ContactDetails.dico",
+						"title": "DIČ",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "last"
+					},
+					{
+						"field": "ContactDetails.cu",
+						"title": "Číslo účtu",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"title": "Korespondenční adresa (pokud je jiná než fakturační, nebo korespondenční z kontaktních údajů)",
+						"type": 25,
+						"active": true
+					},
+					{
+						"field": "Address.street",
+						"title": "Ulice",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "Address.cp",
+						"title": "Č.p.",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next",
+						"mask": "0000A"
+					},
+					{
+						"field": "Address.co",
+						"title": "Č.o.",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "last",
+						"mask": "AAAAA"
+					},
+					{
+						"field": "Address.city",
+						"title": "Město",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "Address.zip",
+						"title": "PSČ",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "000 00",
+						"inline": "last"
+					}
+				]
+			}
+		},
+		{
+			"module": "fakskups",
+			"forms": {
+				"main": [
+					{
+						"field": "FakSkup.cis",
+						"title": "Číslo fa. skup.",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1,
+						"valids": "no_empty,len:len=10,num",
+						"inline": "first"
+					},
+					{
+						"field": "FakSkup.nazev",
+						"title": "Název fak. skup.",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1,
+						"inline": "last"
+					},
+					{
+						"title": "Odběratel",
+						"type": 25,
+						"active": true
+					},
+					{
+						"field": "ContactDetails.firstname",
+						"title": "Křestní jméno",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1,
+						"inline": "first"
+					},
+					{
+						"field": "ContactDetails.lastname",
+						"title": "Přijmení",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1,
+						"inline": "next"
+					},
+					{
+						"field": "ContactDetails.title",
+						"title": "Oslovení",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1,
+						"inline": "last"
+					},
+					{
+						"field": "ContactDetails.birth_date",
+						"title": "Datum narození",
+						"type": "11",
+						"default": null,
+						"num": "0",
+						"active": false,
+						"access": 1,
+						"mask": "09.09. 0000"
+					},
+					{
+						"field": "ContactDetails.telnumber",
+						"title": "Telefonní číslo",
+						"type": "1",
+						"default": "+420 ",
+						"num": "0",
+						"active": true,
+						"access": 1,
+						"mask": "+420 000 000 000",
+						"inline": "first"
+					},
+					{
+						"field": "ContactDetails.zasilat_mailem",
+						"title": "Zasílat e-mailem",
+						"type": 10,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1,
+						"inline": "last"
+					},
+					{
+						"field": "ContactDetails.email",
+						"title": "E-Mail",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1
+					},
+					{
+						"field": "ContactDetails.kind",
+						"title": "Právní forma",
+						"type": 8,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1
+					},
+					{
+						"field": "ContactDetails.firm_name",
+						"title": "Název firmy",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1
+					},
+					{
+						"field": "ContactDetails.ico",
+						"title": "IČO",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1,
+						"inline": "first"
+					},
+					{
+						"field": "ContactDetails.dico",
+						"title": "DIČ",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1,
+						"inline": "last"
+					},
+					{
+						"field": "ContactDetails.cu",
+						"title": "Číslo účtu",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1
+					},
+					{
+						"title": "Fakturační adresa",
+						"type": 25,
+						"active": true
+					},
+					{
+						"field": "Address.street",
+						"title": "Ulice",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1,
+						"inline": "first"
+					},
+					{
+						"field": "Address.cp",
+						"title": "Č.p.",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1,
+						"inline": "next",
+						"mask": "0000A"
+					},
+					{
+						"field": "Address.co",
+						"title": "Č.o.",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1,
+						"inline": "last",
+						"mask": "AAAAA"
+					},
+					{
+						"field": "Address.city",
+						"title": "Město",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1,
+						"inline": "first"
+					},
+					{
+						"field": "Address.zip",
+						"title": "PSČ",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1,
+						"mask": "000 00",
+						"inline": "last"
+					},
+					{
+						"field": "Address.state",
+						"title": "Stát",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": false,
+						"access": 1
+					}
+				]
+			}
+		},
+		{
+			"module": "odbmist",
+			"forms": {
+				"sml_odbm": [
+					{
+						"field": "SmlOM.od",
+						"title": "Začátek smluvního vztahu",
+						"type": "11",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000",
+						"inline": "first"
+					},
+					{
+						"field": "SmlOM.do",
+						"title": "Ukončení smluvního vztahu",
+						"type": "11",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000",
+						"inline": "last"
+					},
+					{
+						"field": "SmlOM.odber_mist_id",
+						"title": "EIC",
+						"type": "24",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "SmlOM.typ_sml",
+						"title": "Smlouva",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "SmlOM.category",
+						"title": "Kategorie",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "SmlOM.vztah",
+						"title": "Vztah",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "SmlOMFlags.duv_zad",
+						"title": "Důvod žádosti",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "SmlOM.vs",
+						"title": "Var. symbol zálohy",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": false,
+						"access": 3
+					},
+					{
+						"field": "SmlOM.fak_skup_id",
+						"title": "Zařazení",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "SmlOM.interval",
+						"title": "Četnost záloh",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "last"
+					},
+					{
+						"field": "SmlOM.zaloha",
+						"title": "Výše zálohy",
+						"type": "1",
+						"default": null,
+						"num": "3",
+						"active": false,
+						"access": 3,
+						"inline": "last"
+					},
+					{
+						"field": "SmlOM.cena_mwh",
+						"title": "Cena za MWh",
+						"type": "1",
+						"default": null,
+						"num": "3",
+						"active": false,
+						"access": 3
+					},
+					{
+						"field": "SmlOMFlags.typ_mer",
+						"title": "Typ měření",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "SmlOMFlags.typ_net",
+						"title": "Typ sítě",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "last"
+					},
+					{
+						"title": "Využití OM",
+						"type": 25,
+						"active": true
+					},
+					{
+						"field": "SmlOMFlags.dan",
+						"title": "neplatí DZP",
+						"type": "10",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "SmlOMFlags.var",
+						"title": "vaření",
+						"type": "10",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next"
+					},
+					{
+						"field": "SmlOMFlags.vyt",
+						"title": "vytápění",
+						"type": "10",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next"
+					},
+					{
+						"field": "SmlOMFlags.tuv",
+						"title": "TUV",
+						"type": "10",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next"
+					},
+					{
+						"field": "SmlOMFlags.tech",
+						"title": "technologie",
+						"type": "10",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "last"
+					}
+				],
+				"sml_odbm_detail": [
+					{
+						"field": "SmlOM.odber_mist_id",
+						"title": "EIC",
+						"type": "24",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "OdberMist.com",
+						"title": "Číslo odběrného místa",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1
+					},
+					{
+						"field": "SmlOM.od",
+						"title": "Začátek smluvního vztahu",
+						"type": "11",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000",
+						"inline": "first"
+					},
+					{
+						"field": "SmlOM.do",
+						"title": "Ukončení smluvního vztahu",
+						"type": "11",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000",
+						"inline": "last"
+					},
+					{
+						"field": "SmlOM.typ_sml",
+						"title": "Typ smlouvy",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "SmlOM.category",
+						"title": "Kategorie",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "SmlOM.vztah",
+						"title": "Vztah k OM",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "SmlOMFlags.duv_zad",
+						"title": "Důvod žádosti",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "SmlOM.vs",
+						"title": "Var. symbol zálohy",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": false,
+						"access": 3
+					},
+					{
+						"field": "SmlOM.fak_skup_id",
+						"title": "Zařazení",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "SmlOM.interval",
+						"title": "Četnost záloh",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next"
+					},
+					{
+						"field": "SmlOM.zaloha",
+						"title": "Výše zálohy",
+						"type": "1",
+						"default": null,
+						"num": "3",
+						"active": true,
+						"access": 3,
+						"inline": "last"
+					},
+					{
+						"field": "SmlOM.cena_mwh",
+						"title": "Cena za MWh",
+						"type": "1",
+						"default": null,
+						"num": "3",
+						"active": false,
+						"access": 3
+					},
+					{
+						"field": "SmlOMFlags.typ_mer",
+						"title": "Typ měření",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "SmlOMFlags.typ_net",
+						"title": "Typ sítě",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "last"
+					},
+					{
+						"title": "Využití OM",
+						"type": 25,
+						"active": true
+					},
+					{
+						"field": "SmlOMFlags.dan",
+						"title": "neplatí DZP",
+						"type": "10",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "SmlOMFlags.var",
+						"title": "vaření",
+						"type": "10",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next"
+					},
+					{
+						"field": "SmlOMFlags.vyt",
+						"title": "vytápění",
+						"type": "10",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next"
+					},
+					{
+						"field": "SmlOMFlags.tuv",
+						"title": "TUV",
+						"type": "10",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next"
+					},
+					{
+						"field": "SmlOMFlags.tech",
+						"title": "technologie",
+						"type": "10",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "last"
+					}
+				]
+			}
+		},
+		{
+			"module": "czalohy",
+			"forms": {
+				"zalohy_list": [
+					{
+						"field": "Zalohy.odber_mist_id",
+						"title": "EIC",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Zalohy.od",
+						"title": "Zaloha od",
+						"type": "11",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000",
+						"inline": "first"
+					},
+					{
+						"field": "Zalohy.do",
+						"title": "do",
+						"type": "11",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000",
+						"inline": "last"
+					},
+					{
+						"field": "Zalohy.vyse",
+						"title": "výše",
+						"type": "1",
+						"default": null,
+						"num": "3",
+						"active": true,
+						"access": 3
+					}
+				],
+				"zaloha_create": [
+					{
+						"field": "Zalohy.odber_mist_id",
+						"title": "EIC",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Zalohy.od",
+						"title": "Zaloha od",
+						"type": "11",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000",
+						"inline": "first"
+					},
+					{
+						"field": "Zalohy.do",
+						"title": "Do",
+						"type": "11",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000",
+						"inline": "last"
+					},
+					{
+						"field": "Zalohy.vyse",
+						"title": "Výše",
+						"type": "1",
+						"default": null,
+						"num": "3",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Zalohy.vs",
+						"title": "Var. symbol",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"valids": "no_empty,len:len=10,num"
+					}
+				],
+				"main": []
+			}
+		},
+		{
+			"module": "cenamwh",
+			"forms": {
+				"cena_mwh": [
+					{
+						"field": "CenaMWH.odber_mist_id",
+						"title": "EIC",
+						"type": "24",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "CenaMWH.od",
+						"title": "Od",
+						"type": "11",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000"
+					},
+					{
+						"field": "CenaMWH.cena",
+						"title": "cena/mwh",
+						"type": "1",
+						"default": null,
+						"num": "3",
+						"active": true,
+						"access": 3
+					}
+				],
+				"cena_mwh_cpy": [
+					{
+						"field": "CenaMWH.od",
+						"title": "S platností Od",
+						"type": "11",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000"
+					},
+					{
+						"field": "CenaMWH.cena",
+						"title": "cena/mwh",
+						"type": "1",
+						"default": null,
+						"num": "3",
+						"active": true,
+						"access": 3
+					}
+				]
+			}
+		},
+		{
+			"module": "zalohy",
+			"forms": {
+				"main": [
+					{
+						"field": "Zalohy.od",
+						"title": "Zaloha od",
+						"type": "11",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000",
+						"inline": "first"
+					},
+					{
+						"field": "Zalohy.do",
+						"title": "do",
+						"type": "11",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000",
+						"inline": "last"
+					},
+					{
+						"field": "Zalohy.vs",
+						"title": "Var. symbol",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"valids": "no_empty,len:len=10,num"
+					},
+					{
+						"field": "Zalohy.vyse",
+						"title": "výše",
+						"type": "1",
+						"default": null,
+						"num": "3",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Zalohy.preplatek",
+						"title": "přeplatek",
+						"type": "1",
+						"default": null,
+						"num": "3",
+						"active": false,
+						"access": 3
+					},
+					{
+						"field": "Zalohy.uhrazeno",
+						"title": "uhrazeno",
+						"type": "8",
+						"default": null,
+						"num": "3",
+						"active": false,
+						"access": 3
+					}
+				]
+			}
+		},
+		{
+			"module": "zaloha",
+			"forms": {
+				"main": [
+					{
+						"field": "Zalohy.od",
+						"title": "Zaloha od",
+						"type": "11",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000",
+						"inline": "first"
+					},
+					{
+						"field": "Zalohy.do",
+						"title": "do",
+						"type": "11",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000",
+						"inline": "last"
+					},
+					{
+						"field": "Zalohy.vs",
+						"title": "Var. symbol",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"valids": "no_empty,len:len=10,num"
+					},
+					{
+						"field": "Zalohy.vyse",
+						"title": "výše",
+						"type": "1",
+						"default": null,
+						"num": "3",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Zalohy.preplatek",
+						"title": "přeplatek",
+						"type": "1",
+						"default": null,
+						"num": "3",
+						"active": false,
+						"access": 3
+					},
+					{
+						"field": "Zalohy.uhrazeno",
+						"title": "uhrazeno",
+						"type": "8",
+						"default": null,
+						"num": "3",
+						"active": false,
+						"access": 3
+					}
+				]
+			}
+		},
+		{
+			"module": "poznamky",
+			"forms": {
+				"poznamka": [
+					{
+						"field": "Comments.text",
+						"title": "Poznámka",
+						"type": "23",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					}
+				]
+			}
+		},
+		{
+			"module": "soubory",
+			"forms": {
+				"soubor": [
+					{
+						"field": "Comments.file_id",
+						"title": "Soubor",
+						"type": "26",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					}
+				]
+			}
+		},
+		{
+			"module": "odbermist",
+			"forms": {
+				"main": [
+					{
+						"field": "OdberMist.eic",
+						"title": "EIC kód",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"valids": "no_empty,len:len=16:message=musí mít 16 znaků,alnum",
+						"mask": "AAAAAAAAAAAAAAAA"
+					},
+					{
+						"field": "OdberMist.com",
+						"title": "Číslo odběrného místa",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"valids": "no_empty,num",
+						"mask": "0000000000"
+					},
+					{
+						"field": "OdberMist.dist_id",
+						"title": "Distributor",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "OdberMist.popis",
+						"title": "Popis",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Address.street",
+						"title": "Ulice",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first"
+					},
+					{
+						"field": "Address.cp",
+						"title": "Č.p.",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next",
+						"mask": "0000A"
+					},
+					{
+						"field": "Address.co",
+						"title": "Č.o.",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next",
+						"mask": "AAAAA"
+					},
+					{
+						"field": "Address.byt_cis",
+						"title": "Číslo bytu",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "last",
+						"mask": "000A"
+					},
+					{
+						"field": "Address.patro",
+						"title": "Patro",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "first",
+						"mask": "000A"
+					},
+					{
+						"field": "Address.city",
+						"title": "Město",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"inline": "next"
+					},
+					{
+						"field": "Address.zip",
+						"title": "PSČ",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"mask": "000 00",
+						"inline": "last"
+					},
+					{
+						"field": "Address.state",
+						"title": "Stát",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": false,
+						"access": 3
+					},
+					{
+						"field": "OdberMist.owner_id",
+						"title": "Zodpovědná osoba",
+						"type": 8,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1
+					},
+					{
+						"field": "OdberMist.created_by",
+						"title": "Vytvořil",
+						"type": 8,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1
+					}
+				]
+			}
+		},
+		{
+			"module": "platby",
+			"forms": {
+				"main": [
+					{
+						"field": "Platba.when",
+						"title": "Připsáno",
+						"type": "11",
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000"
+					},
+					{
+						"field": "Platba.from_cu",
+						"title": "Z účtu",
+						"type": "1",
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Platba.subject",
+						"title": "Popis",
+						"type": "1",
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Platba.platba",
+						"title": "Částka",
+						"type": "1",
+						"default": null,
+						"num": 3,
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Platba.msg",
+						"title": "Zpráva",
+						"type": "1",
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 1
+					},
+					{
+						"field": "Platba.vs",
+						"title": "Var. symbol",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"valids": "no_empty,len:len=10,num"
+					},
+					{
+						"field": "Platba.cislo",
+						"title": "Číslo dokladu",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1
+					},
+					{
+						"field": "Platba.man",
+						"title": "Automatické",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 1
+					},
+					{
+						"field": "Platba.mail",
+						"title": "Email",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 0
+					}
+				],
+				"man": [
+					{
+						"field": "Platba.when",
+						"title": "Připsáno",
+						"type": "11",
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000"
+					},
+					{
+						"field": "Platba.from_cu",
+						"title": "Z účtu",
+						"type": "1",
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Platba.subject",
+						"title": "Popis",
+						"type": "1",
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Platba.platba",
+						"title": "Částka",
+						"type": "1",
+						"default": null,
+						"num": 3,
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Platba.vs",
+						"title": "Var. symbol",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3,
+						"valids": "no_empty,len:len=10,num"
+					}
+				]
+			}
+		},
+		{
+			"module": "platba_edit",
+			"forms": {
+				"tags": [
+					{
+						"field": "user_tags",
+						"title": "Štítky",
+						"type": 21,
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3
+					}
+				]
+			}
+		},
+		{
+			"module": "pohyby",
+			"forms": {
+				"main": [
+					{
+						"field": "Pohyb.when",
+						"title": "kdy",
+						"type": "11",
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3,
+						"mask": "09.09. 0000"
+					},
+					{
+						"field": "Pohyb.way",
+						"title": "Pohyb",
+						"type": "8",
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Pohyb.typ",
+						"title": "Typ",
+						"type": "8",
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Pohyb.castka",
+						"title": "Částka",
+						"type": "1",
+						"default": null,
+						"num": 3,
+						"active": true,
+						"access": 3
+					}
+				]
+			}
+		},
+		{
+			"module": "templates",
+			"forms": {
+				"main": [
+					{
+						"field": "Description.name",
+						"title": "Název",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Templates.subject",
+						"title": "Předmět pro posílání e-mailem",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Templates.key",
+						"title": "Klíč",
+						"type": 1,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Description.description",
+						"title": "Šablona",
+						"type": 6,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Templates.sub_content",
+						"title": "Doplněk",
+						"type": 12,
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					}
+				]
+			}
+		},
+		{
+			"module": "helper",
+			"forms": {
+				"main": [
+					{
+						"field": "Helper.module_id",
+						"title": "Modul",
+						"type": 8,
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Helper.desc",
+						"title": "Nápověda",
+						"type": 6,
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3
+					}
+				]
+			}
+		},
+		{
+			"module": "fields",
+			"forms": {
+				"main": [
+					{
+						"field": "Fields.name",
+						"title": "Popis pole",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Fields.modelname",
+						"title": "Název Modelu",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Fields.rowname",
+						"title": "Název sloupce v tabulce",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Fields.dbtype",
+						"title": "DB-Type",
+						"type": "8",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Fields.uitype",
+						"title": "Typ pole",
+						"type": "8",
+						"default": "1",
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Fields.defaultvalue",
+						"title": "Defaultní hodnota",
+						"type": "1",
+						"default": null,
+						"num": "1",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "Fields.charscount",
+						"title": "Počet znaků do statistiky",
+						"type": "10",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					}
+				]
+			}
+		},
+		{
+			"module": "users",
+			"forms": {
+				"main": [
+					{
+						"field": "User.username",
+						"title": "Jméno a přijmení",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "User.role",
+						"title": "Pozice",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "User.email",
+						"title": "E-Mail",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "User.loginname",
+						"title": "Přihlašovací jméno",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "User.password",
+						"title": "Heslo",
+						"type": "1",
+						"default": null,
+						"num": "0",
+						"active": false,
+						"access": 3
+					},
+					{
+						"field": "User.theme",
+						"title": "Téma",
+						"type": 8,
+						"default": 0,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "User.delegate",
+						"title": "může měnit nastavení jiným uživatelů,",
+						"type": 10,
+						"default": 0,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "User.onlyown",
+						"title": "Vidí jen svoje záznamy",
+						"type": 10,
+						"default": 0,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "User.platby",
+						"title": "Načítání plateb, úprava",
+						"type": 10,
+						"default": 0,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "User.chowner",
+						"title": "Právo měnit vlastníka",
+						"type": 10,
+						"default": 0,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "User.info_ote",
+						"title": "Vidí cron ote info",
+						"type": 10,
+						"default": 0,
+						"num": "0",
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "User.info_banka",
+						"title": "Vidí cron banka info",
+						"type": 10,
+						"default": 0,
+						"num": "0",
+						"active": true,
+						"access": 3
+					}
+				]
+			}
+		},
+		{
+			"module": "settings",
+			"forms": {
+				"main": []
+			}
+		},
+		{
+			"module": "activity",
+			"forms": {
+				"main": [
+					{
+						"field": "ActivityLog.kdy",
+						"title": "Datum",
+						"type": 11,
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "User.username",
+						"title": "Uživatel",
+						"type": "1",
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3
+					},
+					{
+						"field": "ActivityLog.description",
+						"title": "Událost",
+						"type": "1",
+						"default": null,
+						"num": 0,
+						"active": true,
+						"access": 3
+					}
+				]
+			}
+		},
+		{
+			"module": "vs.select",
+			"forms": {
+				"main": []
+			}
+		},
+		{
+			"module": "tags",
+			"forms": {
+				"main": []
+			}
+		}
+	]
+}

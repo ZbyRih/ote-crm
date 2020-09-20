@@ -1,0 +1,1 @@
+<span class="{if isset($class)}{$class}{else}icony{/if} {$file_ico}"></span>

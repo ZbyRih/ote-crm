@@ -1,0 +1,19 @@
+{block #buttons}
+	<a n:href=":Faktury:Default:" class="btn btn-primary btn-raised" title="Seznam faktur"><i class="md md-list"></i>&nbsp;Seznam faktur</a>
+	<a n:href=":Faktury:Edit:" class="btn btn-primary btn-raised" title="Vytvořit ruční fakturu"><i class="md md-note-add"></i>&nbsp;Vytvořit ruční fakturu</a>
+	<a n:href=":Faktury:ExportGp6: year => $year" class="btn btn-primary btn-raised" title="Vytvořit ruční fakturu"><i class="md md-download"></i>&nbsp;Export gp6 zip</a>
+{/block}
+		
+{block content}
+	<div class="">
+		{portlet}
+		
+		{control year}
+		
+		{control view}
+		
+		{control grid}
+		
+		{/portlet}
+	</div>
+{/block}

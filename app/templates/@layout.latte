@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+	<head>
+		{include APP_DIR . '/templates/layout/head.latte'}
+		{wpm_script $basePath, '/dist/css/theme_' . $theme . '_css.css'}
+	</head>
+	
+	<body class="{$bodyClasses}">
+		<header id="header">
+			<div class="headerbar">
+				<div class="headerbar-left">
+					<ul class="header-nav">
+						<li class="header-nav-brand">
+							<div class="brand-holder"><span class="text-lg text-bold text-primary"><a href="/">{_app.name}</a></span></div>
+						</li>
+						<li>
+							<a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+								<i class="fa fa-bars"></i>
+							</a>					
+						</li>
+						<li n:if="$userColision"><span class="alert alert-danger">{$userColision}</span></li>
+					</ul>
+				</div>					
+				<div class="headerbar-right">
+					{control navBar}
+				</div>
+			</div>
+		</header>
+		<div id="base">
+			<div class="offcanvas"></div>
+			<div id="content">
+				{snippet flashes}
+				{flashes $flashes}
+				{/snippet}
+				
+				{if $legacy}
+					{include content}
+				{else}
+				<section>
+					<div class="section-header">
+						{*
+						<ol class="breadcrumb">
+							{ * drobeckova navigace * }
+							<li class="active"></li>
+						</ol>
+						*}
+						{ifset #buttons}
+						<div class="btn-group btn-margin">
+							{include #buttons}
+						</div>
+						{/ifset}
+					</div>	
+					<div class="section-body">
+						<div class="row">
+							<div class="{$cardOff}card">
+								{ifset #content-head}
+								<div class="card-head">
+									{include #content-head}
+								</div>
+								{/ifset}
+								<div class="{$cardOff}card-body main">
+									{include content}
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>			
+				{/if}
+			</div>
+			<div id="menubar" class="menubar-inverse">
+				{control menu}
+			</div>
+		</div>
+	
+		{wpm_script $basePath, '/dist/js/app_js.js'}
+	</body>
+</html>

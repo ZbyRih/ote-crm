@@ -1,0 +1,1 @@
+<button type="submit" class="{#btn_primary_ink#}" name="{$c.key}" id="{$c.key}">{$d.value}</button>

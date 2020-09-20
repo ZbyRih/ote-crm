@@ -1,0 +1,13 @@
+services:
+  - App\Models\Selections\FakturaSelection
+  - App\Models\Selections\FakSkupSelection
+  - App\Models\Selections\InfoSelection
+  - App\Models\Selections\KlientsSelection
+  - App\Models\Selections\OdberMistSelection
+  - App\Models\Selections\OteGP6FakturovaneByYearSelection
+  - App\Models\Selections\OteInvoiceHeadSelection
+  - App\Models\Selections\PlatbaSelection
+  - App\Models\Selections\SmlOmSelection
+  - App\Models\Selections\UserSelection
+  - App\Models\Selections\ZalohaSelection  
+  - App\Models\Selections\ZalohaExportSelection

@@ -1,0 +1,20 @@
+{block #buttons}
+	<a n:href=":Platby:Default:" class="btn btn-primary btn-raised" title="Seznam plateb"><i class="md md-list"></i>&nbsp;Seznam</a>
+	<a n:href=":Platby:Edit:" class="btn btn-primary btn-raised" title="Přidat ručně"><i class="md md-my-library-add"></i>&nbsp;Přidat ručně</a>
+	<a n:href=":Platby:Download:" class="btn btn-primary btn-raised" title="Načíst platby z e-mailů"><i class="md md-import-export"></i>&nbsp;Načíst platby z e-mailů</a>
+	<a n:href=":Platby:Upload:" class="btn btn-primary btn-raised" title="Nahrát výpis z účtu"><i class="md md-file-upload"></i>&nbsp;Nahrát výpis z účtu</a>
+{/block}
+		
+{block content}
+	<div class="">
+		{portlet}
+		
+		{control year}
+		
+		{control view}
+		
+		{control grid}
+		
+		{/portlet}
+	</div>
+{/block}

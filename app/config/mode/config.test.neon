@@ -1,0 +1,7 @@
+mail:
+    smtp: false # SendmailMailer
+
+services:
+  nette.mailer:
+    class: Nette\Mail\IMailer
+    factory: Nextras\MailPanel\FileMailer(%tempDir%/mail-panel-mails)

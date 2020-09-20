@@ -1,0 +1,1 @@
+<input type="password" name="{$c.key}" value="" id="{$c.key}" class="{$class}" />

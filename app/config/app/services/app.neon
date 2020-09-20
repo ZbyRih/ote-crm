@@ -1,0 +1,5 @@
+services:
+  - App\Extensions\App\Cache
+  - App\Extensions\App\User\RoleFinder
+  - App\Extensions\App\User\Mails\ForgotPassword
+  - App\Models\Repositories\ParametersRepository(%app%)

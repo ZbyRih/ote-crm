@@ -1,0 +1,15 @@
+services:
+  - App\Models\Services\FormFactoryService
+  - App\Models\Services\ImapClientService
+  - App\Models\Services\InfoService
+  - App\Models\Services\NowService
+  - App\Models\Services\PlatbyZaraditStrategyFactory
+  - App\Models\Services\PlatbaEntityFactoryService
+
+#listenery
+  - App\Models\Listeners\AppListeners
+  - App\Models\Listeners\DBListeners
+  - App\Models\Listeners\ResponseListeners
+  - App\Models\Listeners\FlashMessageListener
+  - App\Models\Listeners\NotifyUserListener
+  - App\Models\Listeners\SettingsChangedListener
